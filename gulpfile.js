@@ -18,14 +18,3 @@ gulp.task("devcss", function(){
 	.pipe(cleancss({keepSpecialComments : 1}))
 	.pipe(gulp.dest("dist/css/"))
 });
-
-<<<<<<< HEAD
-gulp.task("devcssnormal", function(){
-	gulp.src(["src/css/*.css", "src/sass/*.scss"])
-	.pipe(sass())
-	.pipe(concat("style.css"))
-	.pipe(gulp.dest("dist/css/"))
-});
-=======
-
->>>>>>> 2efbef49b883a36c6ec035076b00e3b1c01f9aee
