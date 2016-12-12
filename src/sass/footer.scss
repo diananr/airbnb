@@ -1,0 +1,66 @@
+@import "_variables";
+@import "_mixins";
+
+footer{
+	width: 100%;
+	padding: 30px;
+	border-top: 1px solid $color-light-gray;
+	margin-top: 20px;
+	select{
+		width: 40%;
+		padding: 10px;
+		border-radius: 5px;
+		@include words ($color-skyblue, 14px, Arial, bold);
+		margin-bottom: 10px;
+
+		option{
+		  font-weight: bold;
+		  padding: 30px 0;
+		}	
+	}
+	.hidden-xs{
+		p{
+			@include words ($color-dark-gray, 14px, Arial, bold);
+		}
+	}
+	ul{
+		padding-left: 0;
+		li{
+			list-style:none;
+			a{
+				@include words ($color-medium-gray, 13px, Helvetica, normal);
+			}
+		}
+	}
+	.footer-part-two{
+		a{
+			@include words ($color-medium-gray, 13px, Arial , normal);
+		}
+		.footer-redes{
+			@include words ($color-medium-gray, 18px, FontAwesome , normal);
+			&:hover{
+				text-decoration: none;
+				color: $color-skyblue;
+			}
+		}
+	}
+	a:hover{
+		text-decoration: none;
+		color: $color-skyblue;
+	}
+}
+
+@media only screen and (min-width: 320px) {
+	footer{
+		select{
+			width: 100%;
+		}
+	}
+}
+@media only screen and (min-width: 768px) {
+	footer{
+		select{
+			width: 80%;
+		}
+	}
+}
