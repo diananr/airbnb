@@ -1,93 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/style.min.css">
-	<title>Document</title>
+	<title>Search-Page</title>
 </head>
 <body>
-	<section class="container-fluid container-filtros">
-		<div class="row row-filtros">
-			<div class="col-md-3">
-				<div class="filtros">Fechas</div>
-			</div>
-			<div class="col-md-3">
-				<input type="date" name="fecha" placeholder="Fecha inicio" class="input-date">
-			</div>
-			<div class="col-md-3">
-				<input type="date" name="fecha" placeholder="Fecha retorno" class="input-date">
-			</div>
-			<div class="col-md-3">
-				<select class="opcion-filtros">
-					<option value="valor1">--Selecciona---</option>
-					<option value="valor1">2 huéspedes</option>
-				</select>
-			</div>
-		</div>
-		<div class="row row-filtros">
-			<div class="col-md-3">
-				<div class="filtros">Tipos de habitación</div>
-			</div>
-			<div class="col-md-3">
-				<div class="container-tip-hab">
-					<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-					<div class="words">Casa entera</div>
-					<div class="container-checkbox">
-						<input type="checkbox" name="fecha">
+	<header></header>
+	<section>
+		<div class="container-fluid">
+			<div class="col-lg-7">
+				<div class="container-filter">
+					<div class="filters-section">
+						<div class="row">
+							<div class="col-lg-2">
+								<div>
+									<span>Fechas</span>
+								</div>
+							</div>
+							<div class="col-lg-9">
+								<div class="row">
+									<div class="col-lg-4">
+										<input type="text" name="checkin">
+									</div>
+									<div class="col-lg-4">
+										<input type="text" name="checkout">
+									</div>
+									<div class="col-lg-4">
+										<div class="guests-select">
+											<select>
+												<option selected value="1">1 huésped</option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</div>		
+						</div>
 					</div>
+					<div class="filters-section"></div>
+					<div class="filters-section"></div>
+					<div class="filters-section"></div>
 				</div>
+				<div class="container-advancedFilter"></div>
+				<div class="container-results"></div>
 			</div>
-			<div class="col-md-3">
-				<div class="container-tip-hab">
-					<div class="icon-filtros">
-						<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-					</div>
-					<div class="words">Habitación privada</div>
-					<div class="container-checkbox">
-						<input type="checkbox" name="fecha">
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="container-tip-hab">
-					<div class="icon-filtros">
-						<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-					</div>
-					<div class="words">Habitación compartida</div>
-					<div class="container-checkbox">
-						<input type="checkbox" name="fecha">
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="row row-filtros">
-			<div class="col-md-3">
-				<div class="filtros">Rango de precios</div>
-			</div>
-			<div class="col-md-9">
-				
-			</div>
-		</div>
-		<div class="row row-filtros">
-			<div class="col-md-3">
-				<div class="filtros">Reserva inmediata</div>
-			</div>
-			<div class="col-md-9">
-				Anuncios que no requieren que el anfitrión acepte la solicitud.
-			</div>
-		</div>
-		<div class="row row-filtros">
-			<div class="col-md-3">
-				<button>Filtros</button>
-				<div><strong>Solo hay un 14% de alojamiento disponibles para estas fechas.</strong>Te recomendamos que reserves un alojamiento lo antes posible.</div>
-				<div>Pueden aplicarse tarifas e impuestos adicionales.</div>
-			</div>
-			<div class="col-md-9">
-				<input type="range" min="0" max="10" value="3" step="1" id="mislider">
-			</div>
+			<div class="col-lg-5"></div>
 		</div>
 	</section>
-	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/main.min.js"></script>
 </body>
 </html>
