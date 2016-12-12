@@ -9,44 +9,93 @@
 <body>
 	<header></header>
 	<section></section>
-	<section class="search">
-		<div class="container">
-			<div class="input-group">
+	<section class="search container">
+		<div class="bar">
+			<div class="location">
+				<span>Dónde</span>
+				<input type="text" name="location" placeholder="Destino, ciudad, dirección">
+			</div>
+			<div class="date">
+				<span>Cúando</span>
 				<div>
-					<label>Dónde</label>
-					<div>
-						<input type="text" name="">
+					<div class="startDate">
+						<input type="text" name="startDate" placeholder="Llegada">
 					</div>
-				</div>
-				<div>
-					<label>Cúando</label>
-					<div>
-						<div>
-							<input type="text" name="">
-						</div>
-						<div></div>
-						<div>
-							<input type="text" name="">
-						</div>
-						<div></div>
+					<div class="arrow">
+						<i class="glyphicon glyphicon-arrow-right"></i>
 					</div>
-				</div>
-				<div>
-					<label>Huéspedes</label>
-					<div>
-						<select></select>
-						<span></span>
+					<div class="endDate">
+						<input type="text" name="endDate" placeholder="Salida">
 					</div>
+					<div class="clean"></div>
 				</div>
+			</div>
+			<div class="guests">
+				<span>Huéspedes</span>
 				<div>
 					<button>
-						<div>
-							<i></i>
-						</div>
-						<div>
-							<span>Buscar</span>
-						</div>
+						<span>1 huésped</span>
+						<i class="glyphicon glyphicon-menu-down"></i>
 					</button>
+				</div>
+			</div>
+			<div class="submit">
+				<button>
+					<span class="letters">Buscar</span>
+					<i class="symbol glyphicon glyphicon-search"></i>
+				</button>
+			</div>
+		</div>
+		<div class="mini-bar">
+			<button type="button" data-toggle="modal" data-target="#myModal">
+				<span>Buscar</span>
+				<i class="glyphicon glyphicon-search"></i>
+			</button>
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-content mini-search">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						  <span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+				 	<div class="modal-body">
+						<div class="row where">
+							<div class="col-xs-12">
+								<div class="row">
+									<span>Dónde</span>
+								</div>
+								<div class="row">
+									<input type="text" name="location" placeholder="Destino, ciudad, dirección">
+								</div>
+							</div>
+						</div>
+						<div class="row when">
+							<div class="col-xs-12">
+								<div class="row">
+									<span>Cúando</span>
+								</div>
+								<div class="row">
+									<div class="col-xs-6">
+										<input type="text" name="startDate" placeholder="Llegada">
+									</div>
+									<div class="col-xs-6">
+										<input type="text" name="endDate" placeholder="Salida">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row people">
+							<button>
+								<span>1 huésped</span>
+								<i class="glyphicon glyphicon-menu-down"></i>
+							</button>
+						</div>
+						<div class="row">
+							<button>
+								<span>Buscar</span>
+							</button>
+						</div>
+				 	</div>
 				</div>
 			</div>
 		</div>
