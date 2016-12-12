@@ -120,9 +120,52 @@ button:focus{
 	width: 100%;
 	height: 100%;
 }
-.mni-search input{
-	width: 100%;
+.row{
+	margin-right: 0;
+	margin-left:0;
 }
+.mini-search .close span{
+	font-size: 32px;
+}
+.when, .people, .button{
+	margin-top: 18px;
+}
+.mini-search span{
+	padding: 4px 0;
+	font-size: 14px;
+}
+.mini-search button{
+	padding:0;
+}
+.mini-search .where input{
+	width: 100%;
+	border-bottom: 1px solid #dce0e0;
+	padding: 10px 0;
+}
+.mini-search .when input{
+	width: 100%;
+	border-bottom: 1px solid #dce0e0;
+	padding: 10px 0;
+}
+.mini-search .people button{
+	width: 100%;
+	border-bottom: 1px solid #dce0e0;
+	padding: 10px 0;
+}
+.mini-search .button button{
+	padding: 9px 27px;
+    font-size: 15px;
+    border-radius:4px;
+    width: 100%;
+    border-color: #ff5a5f;
+    background-color: #ff5a5f;
+    text-align: center;
+}
+.mini-search .button label{
+	float: none;
+	color:white;
+}
+
 /*--------------*/
 @media (max-width: 1200px){
 
