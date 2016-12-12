@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+.container-70{
+	width: 70%;
+}
+
+.owl-wrapper-outer {
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+.owl-item{
+	display: inline-block;
+}
+#experiencias, #alojamientos, #destinos-destacados {
+	.item{
+		margin: 0 10px;
+		img{
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+		p{
+			font-family: Josefin Sans;
+			font-size: 12px;
+			color: #484848;
+		}
+	}
+}
+

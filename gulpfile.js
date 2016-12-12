@@ -6,7 +6,7 @@ var gulp = require("gulp"),
 
 gulp.task("devjs", function () {
 	gulp.src("src/js/*.js")
-	.pipe(concat("main.js"))
+	.pipe(concat("main.min.js"))
 	.pipe(uglify())
 	.pipe(gulp.dest("dist/js/"))
 });
@@ -19,3 +19,9 @@ gulp.task("devcss", function(){
 	.pipe(gulp.dest("dist/css/"))
 });
 
+gulp.task("devcssnormal", function(){
+	gulp.src(["src/css/*.css", "src/sass/*.scss"])
+	.pipe(sass())
+	.pipe(concat("style.css"))
+	.pipe(gulp.dest("dist/css/"))
+});
