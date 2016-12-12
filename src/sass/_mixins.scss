@@ -4,3 +4,6 @@
 	color: $color;
 	font-weight: $weight;
 }
+@mixin padding-estilo($padding:0 0 0 0){
+  padding: $padding;
+}
