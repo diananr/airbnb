@@ -7,3 +7,5 @@ app.use(express.static(__dirname + "/dist"));
 app.listen(3028 , function(){
   console.log("encendido");
 });
+
+// document.getElementById(elementId: DOMString)
