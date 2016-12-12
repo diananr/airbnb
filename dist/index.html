@@ -1,14 +1,112 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" type="text/css" href="css/style.min.css">
-		<title>AirBnb</title>
-	</head>
-	<body>
-		<!--carusel-->
-		<div class="container container-70">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.min.css">
+	<title>AirBnb</title>
+</head>
+<body>
+	<header></header>
+	<section></section>
+	<section class="search container">
+		<div class="bar">
+			<div class="location">
+				<span>Dónde</span>
+				<input type="text" name="location" placeholder="Destino, ciudad, dirección">
+			</div>
+			<div class="date">
+				<span>Cúando</span>
+				<div>
+					<div class="startDate">
+						<input type="text" name="startDate" placeholder="Llegada">
+					</div>
+					<div class="arrow">
+						<i class="glyphicon glyphicon-arrow-right"></i>
+					</div>
+					<div class="endDate">
+						<input type="text" name="endDate" placeholder="Salida">
+					</div>
+					<div class="clean"></div>
+				</div>
+			</div>
+			<div class="guests">
+				<span>Huéspedes</span>
+				<div>
+					<button>
+						<span>1 huésped</span>
+						<i class="glyphicon glyphicon-menu-down"></i>
+					</button>
+				</div>
+			</div>
+			<div class="submit">
+				<button>
+					<span class="letters">Buscar</span>
+					<i class="symbol glyphicon glyphicon-search"></i>
+				</button>
+			</div>
+		</div>
+		<div class="mini-bar">
+			<button type="button" data-toggle="modal" data-target="#myModal">
+				<span>Buscar</span>
+				<i class="glyphicon glyphicon-search"></i>
+			</button>
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-content mini-search">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						  <span aria-hidden="true">x</span>
+						</button>
+					</div>
+					 <div class="modal-body">
+						<div class="row where">
+							<div class="col-xs-12">
+								<div class="row">
+									<span>Dónde</span>
+								</div>
+								<div class="row">
+									<input type="text" name="location" placeholder="Destino, ciudad, dirección">
+								</div>
+							</div>
+						</div>
+						<div class="row when">
+							<div class="row">
+								<div class="col-xs-12">
+									<span>Cúando</span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-6">
+									<input type="text" name="startDate" placeholder="Llegada">
+								</div>
+								<div class="col-xs-6">
+									<input type="text" name="endDate" placeholder="Salida">
+								</div>
+							</div>
+						</div>
+						<div class="row people">
+							<div class="col-xs-12">
+								<span>Huéspedes</span>
+								<button>
+									<span>1 huésped</span>
+									<i class="glyphicon glyphicon-menu-down"></i>
+								</button>
+							</div>
+						</div>
+						<div class="row button">
+							<div class="col-xs-12">
+								<button>
+									<label>Buscar</label>
+								</button>
+							</div>
+						</div>
+					 </div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--carusel-->
+	<div class="container container-70">
 			<h3>Experiencias</h3>
 			<div class="row">
 				<div class="col-md-12">
@@ -127,6 +225,8 @@
 				</div>
 			</div>
 		</div>
-		<script type="text/javascript" src="js/main.min.js"></script>
-	</body>
+	<section></section>
+	<footer></footer>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
 </html>

@@ -1,0 +1,219 @@
+.bar{
+	border:1px solid #dce0e0;
+	border-radius: 4px;
+	display: flex;
+	font-family: Helvetica,Arial,sans-serif;
+	box-shadow: 0 1px 3px 0 #dce0e0;
+}
+.location, .date{
+	width: 35%;
+	border-right: 1px solid #dce0e0;
+}
+.guests{
+	width: 17%;
+}
+.submit{
+	width: 13%;
+}
+.location, .date, .guests, .submit{
+	display: inline-block;
+	padding: 15px 16px 8px;
+}
+/*------*/
+span{
+	color: #484848;
+	display: block;
+	font-size: 15px;
+	letter-spacing: -0.5px;
+}
+input{
+	border: none;
+	font-size: 19px;
+	letter-spacing: -0.5px;
+}
+input:focus{
+	border-bottom: 1px solid #00A699;
+	outline: none;
+}
+button:focus{
+	outline: none;
+}
+/*---*/
+.location input{
+	width: 100%;
+}
+/*---*/
+.startDate, .arrow, .endDate, .clean{
+	display: inline-block;
+}
+.startDate input, .endDate input{
+	width: 140px;
+}
+.arrow i{
+	font-size: 20px;
+	margin:1px;
+}
+/*----*/
+.guests button{
+	width: 100%;
+	border: none;
+	background-color: white;
+	font-size: 19px;
+	padding: 0;
+}
+.guests button:focus{
+	border-bottom: 1px solid #00A699;
+}
+.guests button span{
+	float: left;
+	font-size: 19px;
+}
+.guests i{
+	float: right;
+}
+.symbol{
+	display: none;
+}
+/*----*/
+.submit button{
+	background-color: #FF5A5F;
+	color: white;
+	padding: 16px 10px;
+	border-radius: 4px;
+	width: 100%;
+	font-size: 18px;
+	padding: 11px 0;
+	border: 1px solid;
+}
+.submit button:hover{
+	background-color: #ff7e82;
+}
+.submit button span{
+	color: white;
+}
+
+/*--------------*/
+.mini-bar{
+	display: none;
+	padding: 16px;
+	border:1px solid #dce0e0;
+	border-radius: 4px;
+	font-family: Helvetica,Arial,sans-serif;
+	box-shadow: 0 1px 3px 0 #dce0e0;
+	color: #484848;
+}
+.mini-bar button{
+	width: 100%;
+	background-color: white;
+	border:none;
+}
+.mini-bar span{
+	float: left;
+	font-size: 19px;
+}
+.mini-bar i{
+	float: right;
+	font-size: 24px;
+}
+/*----------*/
+.mini-search{
+	width: 100%;
+	height: 100%;
+}
+.row{
+	margin-right: 0;
+	margin-left:0;
+}
+.mini-search .close span{
+	font-size: 32px;
+}
+.when, .people, .button{
+	margin-top: 18px;
+}
+.mini-search span{
+	padding: 4px 0;
+	font-size: 14px;
+}
+.mini-search button{
+	padding:0;
+}
+.mini-search .where input{
+	width: 100%;
+	border-bottom: 1px solid #dce0e0;
+	padding: 10px 0;
+}
+.mini-search .when input{
+	width: 100%;
+	border-bottom: 1px solid #dce0e0;
+	padding: 10px 0;
+}
+.mini-search .people button{
+	width: 100%;
+	border-bottom: 1px solid #dce0e0;
+	padding: 10px 0;
+}
+.mini-search .button button{
+	padding: 9px 27px;
+    font-size: 15px;
+    border-radius:4px;
+    width: 100%;
+    border-color: #ff5a5f;
+    background-color: #ff5a5f;
+    text-align: center;
+}
+.mini-search .button label{
+	float: none;
+	color:white;
+}
+
+/*--------------*/
+@media (max-width: 1200px){
+
+	.startDate input, .endDate input{
+		width: 105px;
+	}
+	.submit button{
+		padding: 10px 0;
+		margin-top: 5px;
+	}
+	.letters{
+		display: none;
+	}
+	.symbol{
+		display: block;
+		color: white;
+		font-size: 16px;
+	}
+
+
+}
+
+@media (max-width: 990px){
+
+	.startDate input, .endDate input{
+		width: 90px;
+	}
+	.guests button{
+		position: relative;
+	}
+	.guests i{
+		position: absolute;
+		top: 0;
+		right: 0;
+		background-color: white;
+		z-index: 1;
+		padding: 3px;
+	}
+
+}
+
+@media (max-width: 745px){
+
+	.bar{
+		display: none;
+	}
+	.mini-bar{
+		display: block
+	}
+	
+}
