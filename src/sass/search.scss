@@ -1,4 +1,5 @@
 .bar{
+	margin-top: 48px;
 	border:1px solid #dce0e0;
 	border-radius: 4px;
 	display: flex;
@@ -69,7 +70,7 @@
 			}
 
 			i{
-				float: right;	
+				float: right;
 			}
 		}
 		button:focus{
@@ -166,12 +167,12 @@
 	.button{
 		button{
 			padding: 9px 27px;
-		    font-size: 15px;
-		    border-radius:4px;
-		    width: 100%;
-		    border-color: #ff5a5f;
-		    background-color: #ff5a5f;
-		    text-align: center;
+			font-size: 15px;
+			border-radius:4px;
+			width: 100%;
+			border-color: #ff5a5f;
+			background-color: #ff5a5f;
+			text-align: center;
 		}
 		label{
 			float: none;
@@ -218,6 +219,7 @@
 		display: none;
 	}
 	.mini-bar{
-		display: block
-	}	
+		display: block;
+		margin-top:30px;
+	}
 }

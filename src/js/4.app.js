@@ -31,18 +31,36 @@ var carouselExperiences = function(){
 		itemsTablet: [768,4],
 		itemsMobile : [320,3]
 	});
-	$("#carousel-resultado-1").owlCarousel({
+	$("#carousel-result-1").owlCarousel({
 		navigation : true,
 		slideSpeed : 300,
 		paginationSpeed : 400,
 		singleItem:true
 	});
-	$("#carousel-resultado-2").owlCarousel({
+	$("#carousel-result-2").owlCarousel({
 		navigation : true,
 		slideSpeed : 300,
 		paginationSpeed : 400,
 		singleItem:true
 	});
+	$("#carousel-result-3").owlCarousel({
+		navigation : true,
+		slideSpeed : 300,
+		paginationSpeed : 400,
+		singleItem:true
+	});
+	$("#carousel-result-4").owlCarousel({
+		navigation : true,
+		slideSpeed : 300,
+		paginationSpeed : 400,
+		singleItem:true
+	});
+	var prev = $(".owl-prev");
+	prev.html("<span class='glyphicon glyphicon-menu-left'></span>");
+	var next = $(".owl-next");
+	next.html("<span class='glyphicon glyphicon-menu-right'></span>");
+
+
 }
 
 var carouselSlider = function(){
