@@ -12,25 +12,25 @@
 		background-image:url("../img/slider_posters_lg.jpg");
 		@include background();
 		background-position: bottom;
-		padding: 3em 0 0 12em;
-		background-size: 1703px;
-    height: 530px;
+		padding: 4% 0 0 10%;
+    background-size: 124%;
+    height: 37em;
 		.title{
 			h2{
-				font-size: 3.3em;
+				font-size: 320%;
     		font-weight: bold;
 			}
 			h6{
-				line-height: 23px;
-				margin-top: 1em;
-				font-size: 1.4em;
+				line-height: 1em;
+		    margin-top: 2%;
+		    font-size: 129%;
 				color: #6C6C6C;
 			}
 			h6 + div button{
-				margin-top: 1.5em;
-				border: 2px solid #C8C8C8;
-				padding: 8px 24px 9px;
-				border-radius: 100px;
+				margin-top: 3%;
+		    border: 2px solid #C8C8C8;
+		    padding: 1% 2% 1%;
+		    border-radius: 25px;
 				a{
 					color: #565656;
 				}
@@ -44,26 +44,26 @@
 			background-image:url("../img/slider_experiences_lg.png");
 			@include background();
 			background-position: left;
-			padding: 7em 0 0 3em;
-			background-size: 1640px;
-	    height: 530px;
+			padding: 8% 0 0 3%;
+    	background-size: 119%;
+	    height: 37em;
 	    .title{
 	    	color: white;
 				h2{
-					font-size: 3.3em;
+					font-size: 330%;
 	    		font-weight: bold;
 				}
 				h6{
-					line-height: 23px;
-					margin-top: 1em;
-					font-size: 1.3em;
+					line-height: 135%;
+			    margin-top: 2%;
+			    font-size: 140%;
 				}
 				h6 + div button{
-					background-color: transparent !important;
-					margin-top: 1.5em;
-					border: 2px solid #FFB1A7;
-					padding: 8px 24px 9px;
-					border-radius: 100px;
+					background-color:transparent;
+					margin-top: 2%;
+			    border: 2px solid #FFB1A7;
+			    padding: 1% 2% 1%;
+			    border-radius: 25px;
 					a{
 						color: #ffffff;
 					}
@@ -76,31 +76,31 @@
 		padding-bottom: 0 !important;
 		.img{
 			background-image:url("../img/slider_places_lg.png");
-			background-repeat:no-repeat;
-			padding: 7em 0 0 3em;
-			background-position: bottom right;
-	    background-size: 580px;
-	    margin: 0 11em 0;
-	    height: 530px;
+	    background-repeat: no-repeat;
+	    padding: 6% 0 0 2%;
+	    background-position: bottom right;
+	    background-size: 57%;
+	    margin: 0 13%;
+	    height: 37em;
 	    .title{
 				h2{
-					margin-top: 2.2em;
-					color: #484848;
-					font-size: 3.3em;
-	    		font-weight: bold;
+			    margin-top: 9%;
+			    color: #484848;
+			    font-size: 361%;
+			    font-weight: 700;
 				}
 				h6{
-					line-height: 23px;
-					color: #5B5956;
-					margin-top: 1em;
-					font-size: 1.3em;
+			    line-height: 140%;
+			    color: #5B5956;
+			    margin-top: 2%;
+			    font-size: 130%;
 				}
 				h6 + div button{
 					background-color: transparent !important;
-					margin-top: 1.5em;
-					border: 2px solid #C7B5A7;
-					padding: 8px 24px 9px;
-					border-radius: 100px;
+					margin-top: 3%;
+			    border: 2px solid #C7B5A7;
+			    padding: 1% 1% 1%;
+					border-radius: 25px;
 					a{
 						color: #64605D;
 					}
@@ -114,24 +114,23 @@
 		.img{
 			background-image:url("../img/slider_keynote.jpg");
 			background-repeat:no-repeat;
-			padding: 7em 0 0 3em;
-			background-position: bottom right;
-	    background-size: 580px;
-	    margin: 0 11em 0;
-	    height: 530px;
+	    padding: 6% 0 0 1%;
+	    background-position: bottom right;
+	    background-size: 61%;
+	    margin: 0 9%;
+	    height: 37em;
 	    .title{
 				h2{
-					margin-top: 2.5em;
-					color: #484848;
-					font-size: 3.2em;
-	    		font-weight: bold;
+					margin-top: 8%;
+			    color: #484848;
+			    font-size: 300%;
+			    font-weight: 700;;
 				}
 				h6{
 
 					color: #5B5956;
-					margin-top: 1em;
-					font-size: 1.1em;
-					line-height: 23px;
+			    font-size: 115%;
+			    line-height: 148%;
 				}
 				h6 + div button{
 					background-color: transparent !important;
