@@ -1,0 +1,83 @@
+[
+    {
+        "distric":"miraflores",
+        "img1":"img/airbnb1a.jpg",
+        "img2":"img/airbnb1b.jpg",
+        "img3":"img/airbnb1c.jpg",
+        "price": "s/. 240",
+        "owner":"img/airbnb1p.jpg",
+        "title":"Miraflores Private Room",
+        "datails":"Habitación privada"
+    },
+    {
+        "distric":"miraflores",
+        "img1":"img/airbnb2a.jpg",
+        "img2":"img/airbnb2b.jpg",
+        "img3":"img/airbnb2c.jpg",
+        "price": "s/. 180",
+        "owner":"img/airbnb2p.jpg",
+        "title":"Apartamento de diseño",
+        "datails":"Habitación privada"
+    },
+    {
+        "distric":"miraflores",
+        "img1":"img/airbnb3a.jpg",
+        "img2":"img/airbnb3b.jpg",
+        "img3":"img/airbnb3c.jpg",
+        "price": "s/. 270",
+        "owner":"img/airbnb3p.jpg",
+        "title":"Lindo departamento",
+        "datails":"Habitación privada"
+    },
+    {
+        "distric":"miraflores",
+        "img1":"img/airbnb4a.jpg",
+        "img2":"img/airbnb4b.jpg",
+        "img3":"img/airbnb4c.jpg",
+        "price": "s/. 360",
+        "owner":"img/airbnb4p.jpg",
+        "title":"Amplio Departamento",
+        "datails":"Habitación privada"
+    },
+    {
+        "distric":"san isidro",
+        "img1":"img/airbnb5a.jpg",
+        "img2":"img/airbnb5b.jpg",
+        "img3":"img/airbnb5c.jpg",
+        "price": "s/. 430",
+        "owner":"img/airbnb5p.jpg",
+        "title":"San Isidro Private Room",
+        "datails":"Casa/apto. entero"
+    },
+    {
+        "distric":"san isidro",
+        "img1":"img/airbnb6a.jpg",
+        "img2":"img/airbnb6b.jpg",
+        "img3":"img/airbnb6c.jpg",
+        "price": "s/. 240",
+        "owner":"img/airbnb6p.jpg",
+        "title":"Apartamento de diseño",
+        "datails":"Casa/apto"
+    },
+    {
+        "distric":"san isidro",
+        "img1":"img/airbnb7a.jpg",
+        "img2":"img/airbnb7b.jpg",
+        "img3":"img/airbnb7c.jpg",
+        "price": "s/. 190",
+        "owner":"img/airbnb7p.jpg",
+        "title":"Room in San Isidro",
+        "datails":"Habitación privada"
+    },
+    {
+        "distric":"san isidro",
+        "img1":"img/airbnb8a.jpg",
+        "img2":"img/airbnb8b.jpg",
+        "img3":"img/airbnb8c.jpg",
+        "price": "s/. 225",
+        "owner":"img/airbnb8p.jpg",
+        "title":"Habitación con vista al mar",
+        "datails":"Habitación privada"
+    },
+      
+]

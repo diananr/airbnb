@@ -1,10 +1,25 @@
 var slideIndex = 0;
 
+var templateResults = '<div class="col-md-6 col-sm-6 col-xs-12 carousel">'+
+							'<div id="carousel-result-1" class="owl-carousel owl-theme">'+
+								'<div class="item"><img src="**img1**" alt="Room"></div>'+
+								'<div class="item"><img src="**img2**" alt="Room"></div>'+
+								'<div class="item"><img src="**img3**" alt="Room"></div>'+
+							'</div>'+
+							'<span class="hearth glyphicon glyphicon-heart-empty"></span>'+
+							'<span class="hearth-2 glyphicon glyphicon-heart"></span>'+
+							'<div class="cost"><strong>**cost**</strong><span class="ray glyphicon glyphicon-flash"></span></div>'+
+							'<div class="owner"><img src="**imgp**" alt="Owner"></div>'+
+							'<h4>**title**</h4>'+
+							'<p>**detail**</p>'+
+						'</div>';
+
 var loadPag = function(){
 	carouselExperiences();
 	carouselSlider()
 	showMap();
 	filterView();
+	ajaxAirbnb();
 }
 
 $(document).ready(loadPag);
@@ -130,4 +145,27 @@ var filterView = function(){
     $(".option-advancedFilter").fadeToggle();
     $(".container-results").toggleClass("ocultar");
 	});
+}
+
+var ajaxAirbnb = function(){
+	console.log("entro a la funcion");
+	$.getJSON("airbnb.json",
+		function(response){
+			var newTemplate= "";
+			$.each(response, function(i, airbnb){
+				console.log("entro al template");
+				newTemplate += templateResults
+								.replace("**img1**", airbnb.img1)
+								.replace("**img2**", airbnb.img2)
+								.replace("**img3**", airbnb.img3)
+								.replace("**cost**", airbnb.price)
+								.replace("**imgp**", airbnb.owner)
+								.replace("**title**", airbnb.title)
+								.replace("**detail**", airbnb.details);
+	        });
+	     	console.log("exito");
+		$("#eachresult").html(newTemplate);
+		console.log("error");
+		}
+	);
 }
