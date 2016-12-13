@@ -4,3 +4,14 @@
       width: 100%;
       top:0;
    }
+}
+@mixin background(){
+	background-position:center;
+	background-repeat: no-repeat;
+}
+@mixin words ($color, $size, $family, $weight){
+	font-family: $family;
+	font-size: $size;
+	color: $color;
+	font-weight: $weight;
+}

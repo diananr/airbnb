@@ -1,0 +1,50 @@
+.header-filter{
+
+	border-bottom: 1px solid #dce0e0;
+
+	.icon-header{
+		padding:0;
+
+		img{
+			width: 70%;
+		    padding: 10px 16px;
+		    border-right: 1px solid #dce0e0;
+		}
+	}
+	.search-header{
+		padding:0;
+
+		button{
+			background-color:white;
+			border:none;
+			width: 100%;
+			text-align: left;
+			padding:16px;
+
+			i{
+				margin-right: 5px;
+				font-size: 14px;
+			}
+
+			input{
+				border:none;
+				outline: none;
+				font-size: 14px;
+			}
+		}
+		button:focus{
+			outline: none;
+		}
+	}
+
+	.links{
+		div{
+			margin-top: 8px;
+
+			span{
+				font-size: 14px;
+				color: #484848;
+			}
+		}
+	}
+}

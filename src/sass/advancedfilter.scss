@@ -1,0 +1,26 @@
+@import "_variables";
+@import "_mixins";
+
+.container-advancedFilter{
+	.boton-advancedFilter{
+		padding: 30px 0;
+		border-bottom: 1px solid $color-light-gray;
+		button{
+			padding: 10px 50px;
+    	border-radius: 5px;
+			background-color: transparent;
+			border: 1px solid $color-medium-gray;
+		}
+	}
+	.option-advancedFilter{
+		select{
+			width: 100%;
+	    padding: 10px;
+	    border-radius: 3px;
+		}
+		.filters-section{
+			padding: 20px 0;
+   		border-bottom: 1px solid $color-light-gray;
+		}
+	}
+}
