@@ -8,7 +8,7 @@ gulp.task("devjs", function () {
 	gulp.src("src/js/*.js")
 	.pipe(concat("main.min.js"))
 	.pipe(uglify())
-	.pipe(gulp.dest("dist/js/"))
+	.pipe(gulp.dest("dist/js/"));
 });
 
 gulp.task("devcss", function(){
@@ -16,5 +16,7 @@ gulp.task("devcss", function(){
 	.pipe(sass())
 	.pipe(concat("style.min.css"))
 	.pipe(cleancss({keepSpecialComments : 1}))
-	.pipe(gulp.dest("dist/css/"))
+	.pipe(gulp.dest("dist/css/"));
 });
+
+gulp.task('default',[ "devcss", "devjs"]);
