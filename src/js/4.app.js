@@ -58,8 +58,6 @@ var carouselExperiences = function(){
 	prev.html("<span class='glyphicon glyphicon-menu-left'></span>");
 	var next = $(".owl-next");
 	next.html("<span class='glyphicon glyphicon-menu-right'></span>");
-
-
 }
 
 var carouselSlider = function(){
