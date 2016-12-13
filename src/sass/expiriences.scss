@@ -2,7 +2,6 @@
 .container-70{
 	width: 70%;
 }
-
 .owl-wrapper-outer {
 	overflow: hidden;
 	position: relative;
@@ -21,9 +20,65 @@
 			height: auto;
 		}
 		p{
+			margin: 10px 0 0px 0;
 			font-family: Josefin Sans;
 			font-size: 17px;
 			color: #484848;
+		}
+	}
+}
+@media (max-width: 768px){
+	.container-70{
+		width: 100%;
+	}
+	#experiencias, #alojamientos, #destinos-destacados {
+		.item{
+			margin: 0 5px;
+			p{
+				font-size: 14px;
+			}
+		}
+	}
+	#experiencias{
+		.owl-item{
+			width: 240px !important;
+		}
+	}
+	#alojamientos{
+		.owl-item{
+			width: 360px !important;
+		}
+	}
+	#destinos-destacados{
+		.owl-item{
+			width: 179px !important;
+		}
+	}
+}
+@media (max-width: 320px){
+	.owl-item{
+		width: 139px !important;
+	}
+	#experiencias, #alojamientos, #destinos-destacados {
+		.item{
+			p{
+				font-size: 12px;
+			}
+		}
+	}
+	#experiencias{
+		.owl-item{
+			width: 139px !important;
+		}
+	}
+	#alojamientos{
+		.owl-item{
+			width: 278px !important;
+		}
+	}
+	#destinos-destacados{
+		.owl-item{
+			width: 92px !important;
 		}
 	}
 }
