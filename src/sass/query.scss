@@ -7,6 +7,9 @@
 
 	// anabel: slider
 	.slider{
+		.btn-slider-preview,.btn-slider-next{
+			top: 17% !important;
+		}
 		.slider-1{
 			padding: 4% 0 0 0 !important;
 			height: 30em !important;
@@ -84,6 +87,9 @@
 
 @media (max-width: 320px){
 	.slider{
+		.btn-slider-preview,.btn-slider-next{
+			display: none !important;
+		}
 		.slider-1{
 			height: 25em !important;
 			background-size: 200% !important; 
