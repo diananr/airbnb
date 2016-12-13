@@ -91,7 +91,8 @@
 			.title{
 				text-align: center;
 				h2{
-					font-size: 200% !important;
+					margin-top: 3em !important;
+					font-size: 135% !important;
 				}
 				h6{
 					display: none;
@@ -106,7 +107,7 @@
 						margin-top: 2%;
 						border: transparent;
 						a{
-							color: #ffffff !important;
+							color: #363535 !important;
 						}
 					}
 				}
@@ -121,7 +122,7 @@
 				.title{
 					text-align: center;
 					h2{
-						font-size: 200% !important;
+						font-size: 170% !important;
 					}
 					h6{
 						display: none;
@@ -148,11 +149,12 @@
 				text-align: center;
 				height: 25em !important;
 				margin-left: 0 !important;
-				background-position: 522px bottom!important;
-        background-size: 25% !important;
+				background-position: 89px bottom!important;
+        background-size: 45% !important;
 				.title{
-					margin-right: 30% !important;
+					text-align: center !important;
 					h2{
+						font-size: 155% !important; 
 						margin-right: 0 !important;
 					}
 					.link-desktop{
@@ -164,6 +166,7 @@
 							background-color: transparent !important;
 							margin-top: 2%;
 							border: transparent;
+							font-size: 110% !important;
 							a{
 								color: #6D6A6A !important;
 							}
@@ -177,6 +180,12 @@
 				text-align: center;
 				height: 25em !important;
 				.title{
+					h2{
+						font-size: 160% !important;
+						br{
+							display: none;
+						}
+					}
 					.link-desktop{
 						display: none !important;
 					}
