@@ -1,8 +1,7 @@
-var slideIndex = 0;
 
 var loadPag = function(){
 	carouselExperiences();
-	carouselSlider()
+	carouselSlider();
 	showMap();
 }
 
@@ -60,8 +59,9 @@ var carouselExperiences = function(){
 	next.html("<span class='glyphicon glyphicon-menu-right'></span>");
 }
 
+var slideIndex = 0;
+	var i = 0;
 var carouselSlider = function(){
-	var i;
 	var x = document.querySelectorAll(".slider-carrusel");
 	for (i = 0; i < x.length; i++) {
 	  x[i].style.display = "none";
@@ -69,8 +69,29 @@ var carouselSlider = function(){
 	slideIndex++;
 	if (slideIndex > x.length) {slideIndex = 1}
 	  $(x[slideIndex-1]).fadeIn(20);
-	setTimeout(carouselSlider, 10000);
 }
+
+var set = setInterval(carouselSlider, 10000);
+$('#next').click(function() {
+  clearInterval(carouselSlider);
+  i += 1;
+  var d = $(".slider-carrusel");
+  var itemAmt = d.length;
+  if (i < 0) {
+    i = itemAmt + 1;
+  }
+  carouselSlider();
+});
+
+$('#preview').click(function() {
+  // clearInterval(carouselSlider);
+  var d = $(".slider-carrusel");
+  var itemAmt = d.length;
+  if (i > 1) {
+    i = itemAmt - 1;
+  }
+  carouselSlider();
+});
 
 var showMap = function(){
 	$("#map").addClass("sizeMap");
