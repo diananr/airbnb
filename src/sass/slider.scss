@@ -1,10 +1,6 @@
 @import "_variables";
 @import "_functions";
 @import "_mixins";
-
-*{
-	box-sizing: border-box;
-}
 .slider{
 	.slider-1{
 		background-image:url("../img/slider_posters_lg.jpg");
