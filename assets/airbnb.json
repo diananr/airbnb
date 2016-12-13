@@ -1,6 +1,5 @@
 [
     {
-        "distric":"miraflores",
         "img1":"img/airbnb1a.jpg",
         "img2":"img/airbnb1b.jpg",
         "img3":"img/airbnb1c.jpg",
@@ -10,7 +9,6 @@
         "datails":"Habitación privada"
     },
     {
-        "distric":"miraflores",
         "img1":"img/airbnb2a.jpg",
         "img2":"img/airbnb2b.jpg",
         "img3":"img/airbnb2c.jpg",
@@ -20,7 +18,6 @@
         "datails":"Habitación privada"
     },
     {
-        "distric":"miraflores",
         "img1":"img/airbnb3a.jpg",
         "img2":"img/airbnb3b.jpg",
         "img3":"img/airbnb3c.jpg",
@@ -30,7 +27,6 @@
         "datails":"Habitación privada"
     },
     {
-        "distric":"miraflores",
         "img1":"img/airbnb4a.jpg",
         "img2":"img/airbnb4b.jpg",
         "img3":"img/airbnb4c.jpg",
@@ -40,7 +36,6 @@
         "datails":"Habitación privada"
     },
     {
-        "distric":"san isidro",
         "img1":"img/airbnb5a.jpg",
         "img2":"img/airbnb5b.jpg",
         "img3":"img/airbnb5c.jpg",
@@ -50,7 +45,6 @@
         "datails":"Casa/apto. entero"
     },
     {
-        "distric":"san isidro",
         "img1":"img/airbnb6a.jpg",
         "img2":"img/airbnb6b.jpg",
         "img3":"img/airbnb6c.jpg",
@@ -60,7 +54,6 @@
         "datails":"Casa/apto"
     },
     {
-        "distric":"san isidro",
         "img1":"img/airbnb7a.jpg",
         "img2":"img/airbnb7b.jpg",
         "img3":"img/airbnb7c.jpg",
@@ -70,7 +63,6 @@
         "datails":"Habitación privada"
     },
     {
-        "distric":"san isidro",
         "img1":"img/airbnb8a.jpg",
         "img2":"img/airbnb8b.jpg",
         "img3":"img/airbnb8c.jpg",
