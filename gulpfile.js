@@ -6,7 +6,7 @@ var gulp = require("gulp"),
 
 gulp.task("devjs", function () {
 	gulp.src("src/js/*.js")
-	.pipe(concat("main.js"))
+	.pipe(concat("main.min.js"))
 	.pipe(uglify())
 	.pipe(gulp.dest("dist/js/"));
 });

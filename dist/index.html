@@ -19,15 +19,15 @@
 									<h2>Te espera un mundo de viajes inolvidables.</h2>
 									<h6>Alojamientos, experiencias y lugares, todo en una sola aplicación.</h6>
 									<div class="link-desktop">
-											<button type="button" class="btn btn-default">
-												<a href="#">Descubre las últimas novedades</a>
-											</button>
-										</div>
-										<div class="link-responsive">
-											<button class="btn-default">
-												<a href="#">Descubre las últimas novedades <span class="glyphicon glyphicon-menu-right"></span></a>
-											</button>
-									  </div>
+										<button type="button" class="btn btn-default">
+											<a href="#">Descubre las últimas novedades</a>
+										</button>
+									</div>
+									<div class="link-responsive">
+										<button class="btn-default">
+											<a href="#">Descubre las últimas novedades <span class="glyphicon glyphicon-menu-right"></span></a>
+										</button>
+								  </div>
 								</div>
 							</div>
 						</div>
@@ -106,10 +106,379 @@
 				</div>
 			</div>
 		</div>
+	</section>	
+	<section></section>
+	<section class="search container">
+		<div class="bar">
+			<div class="location">
+				<span>Dónde</span>
+				<input type="text" name="location" placeholder="Destino, ciudad, dirección">
+			</div>
+			<div class="date">
+				<span>Cúando</span>
+				<div>
+					<div class="startDate">
+						<input type="text" name="startDate" class="campofecha" size="12" placeholder="Llegada">
+					</div>
+					<div class="arrow">
+						<i class="glyphicon glyphicon-arrow-right"></i>
+					</div>
+					<div class="endDate">
+						<input type="text" name="endDate" placeholder="Salida">
+					</div>
+					<div class="clean">X</div>
+				</div>
+			</div>
+			<div class="guests">
+				<span>Huéspedes</span>
+				<div>
+					<button>
+						<span>1 huésped</span>
+						<i class="glyphicon glyphicon-menu-down"></i>
+					</button>
+				</div>
+			</div>
+			<div class="submit">
+				<button>
+					<span class="letters">Buscar</span>
+					<i class="symbol glyphicon glyphicon-search"></i>
+				</button>
+			</div>
+		</div>
+		<div class="mini-bar">
+			<button type="button" data-toggle="modal" data-target="#myModal">
+				<span>Buscar</span>
+				<i class="glyphicon glyphicon-search"></i>
+			</button>
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-content mini-search">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						  <span aria-hidden="true">x</span>
+						</button>
+					</div>
+					 <div class="modal-body">
+						<div class="row where">
+							<div class="col-xs-12">
+								<div class="row">
+									<span>Dónde</span>
+								</div>
+								<div class="row">
+									<input type="text" name="location" placeholder="Destino, ciudad, dirección">
+								</div>
+							</div>
+						</div>
+						<div class="row when">
+							<div class="row">
+								<div class="col-xs-12">
+									<span>Cúando</span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-6">
+									<input type="text" name="startDate" placeholder="Llegada">
+								</div>
+								<div class="col-xs-6">
+									<input type="text" name="endDate" placeholder="Salida">
+								</div>
+							</div>
+						</div>
+						<div class="row people">
+							<div class="col-xs-12">
+								<span>Huéspedes</span>
+								<button>
+									<span>1 huésped</span>
+									<i class="glyphicon glyphicon-menu-down"></i>
+								</button>
+							</div>
+						</div>
+						<div class="row button">
+							<div class="col-xs-12">
+								<button>
+									<label>Buscar</label>
+								</button>
+							</div>
+						</div>
+					 </div>
+				</div>
+			</div>
+		</div>
 	</section>
-	<section></section>
-	<section></section>
-	<footer></footer>
-	<script type="text/javascript" src="js/main.js"></script>
+	<!--carusel-->
+	<section>
+		<div class="container container-70">
+			<h3>Experiencias</h3>
+			<div class="row">
+				<div class="col-md-12">
+					<div id="experiencias">
+						<div class="item">
+							<img src="img/experiencias_1.jpg" alt="Experiencia">
+							<p><strong>S/.527</strong> Community & crafting · 2 días</p>
+						</div>
+						<div class="item">
+							<img src="img/experiencias_2.jpg" alt="Experiencia">
+							<p><strong>S/.177</strong> Honey & bees experience</p>
+						</div>
+						<div class="item">
+							<img src="img/experiencias_3.jpg" alt="Experiencia">
+							<p><strong>S/.422</strong> Olympic training & farming · 3 días</p>
+						</div>
+						<div class="item">
+							<img src="img/experiencias_4.jpg" alt="Experiencia">
+							<p><strong>S/.594</strong> Meditation & flowers · 3 días</p>
+						</div>
+						<div class="item">
+							<img src="img/experiencias_5.jpg" alt="Experiencia">
+							<p><strong>S/.518</strong> Tea ceremony & neighborhood · 2 días</p>
+						</div>
+						<div class="item">
+							<img src="img/experiencias_6.jpg" alt="Experiencia">
+							<p><strong>S/.927</strong> Crafting & sewing · 3 días</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<h3>Alojamientos</h3>
+			<div class="row">
+				<div class="col-md-12">
+					<div id="alojamientos">
+						<div class="item">
+							<img src="img/alojamientos_1.jpg" alt="Alojamiento">
+							<p><strong>S/.1836</strong> Casa/apto. entero en Maioris Decima</p>
+						</div>
+						<div class="item">
+							<img src="img/alojamientos_2.jpg" alt="Alojamiento">
+							<p><strong>S/.242</strong>  Habitación privada en Marrakesh</p>
+						</div>
+						<div class="item">
+							<img src="img/alojamientos_3.jpg" alt="Alojamiento">
+							<p><strong>S/.326</strong> Casa/apto. entero en Shanghái</p>
+						</div>
+						<div class="item">
+							<img src="img/alojamientos_4.jpg" alt="Alojamiento">
+							<p><strong>S/.140</strong> Casa/apto. entero en Minsk</p>
+						</div>
+						<div class="item">
+							<img src="img/alojamientos_5.jpg" alt="Alojamiento">
+							<p><strong>S/.562</strong> Habitación privada en Ashfield</p>
+						</div>
+						<div class="item">
+							<img src="img/alojamientos_6.jpg" alt="Alojamiento">
+							<p><strong>S/.927</strong> Casa/apto. enetro en Florencia</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<h3>Destinos destacados</h3>
+			<div class="row">
+				<div class="col-md-12">
+					<div id="destinos-destacados">
+						<div class="item">
+							<img src="img/destinos_destacados_1.jpg" alt="Destino destacado">
+							<p><strong>La Habana</strong></p>
+						</div>
+						<div class="item">
+							<img src="img/destinos_destacados_2.jpg" alt="Destino destacado">
+							<p><strong>Paris</strong></p>
+						</div>
+						<div class="item">
+							<img src="img/destinos_destacados_3.jpg" alt="Destino destacado">
+							<p><strong>London</strong></p>
+						</div>
+						<div class="item">
+							<img src="img/destinos_destacados_4.jpg" alt="Destino destacado">
+							<p><strong>Tokio</strong></p>
+						</div>
+						<div class="item">
+							<img src="img/destinos_destacados_5.jpg" alt="Destino destacado">
+							<p><strong>Ciudad del Cabo</strong></p>
+						</div>
+						<div class="item">
+							<img src="img/destinos_destacados_6.jpg" alt="Destino destacado">
+							<p><strong>Seúl</strong></p>
+						</div>
+						<div class="item">
+							<img src="img/destinos_destacados_7.jpg" alt="Destino destacado">
+							<p><strong>Miami</strong></p>
+						</div>
+						<div class="item">
+							<img src="img/destinos_destacados_8.jpg" alt="Destino destacado">
+							<p><strong>Los Ángeles</strong></p>
+						</div>
+						<div class="item">
+							<img src="img/destinos_destacados_9.jpg" alt="Destino destacado">
+							<p><strong>Florencia</strong></p>
+						</div>
+						<div class="item">
+							<img src="img/destinos_destacados_10.jpg" alt="Destino destacado">
+							<p><strong>Nairobi</strong></p>
+						</div>
+						<div class="item">
+							<img src="img/destinos_destacados_11.jpg" alt="Destino destacado">
+							<p><strong>Detroit</strong></p>
+						</div>
+						<div class="item">
+							<img src="img/destinos_destacados_12.jpg" alt="Destino destacado">
+							<p><strong>San Francisco</strong></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="container">
+			<div class="footer-part-one row">
+				<div class="col-md-4 col-lg-4">
+					<div class="row">
+						<div class="col-xs-6 col-md-6 col-lg-12">
+							<select>
+							  <option value="Bahasa Indonesia">Bahasa Indonesia</option>
+							  <option value="Bahasa Melayu">Bahasa Melayu</option>
+							  <option value="Català">Català</option>
+							  <option value="Dansk">Dansk</option>
+							  <option value="Deutsch">Deutsch</option>
+							  <option value="English">English</option>
+							  <option value="Español" selected="selected">Español</option>
+							  <option value="Eλληνικά">Eλληνικά</option>
+							  <option value="Français">Français</option>
+							  <option value="Italiano">Italiano</option>
+							  <option value="Magyar">Magyar</option>
+							  <option value="Nederlands">Nederlands</option>
+							  <option value="Norsk">Norsk</option>
+							  <option value="Polski">Polski</option>
+							  <option value="Português">Português</option>
+							  <option value="Suomi">Suomi</option>
+							  <option value="Svenska">Svenska</option>
+							  <option value="Türkçe">Türkçe</option>
+							  <option value="Íslenska">Íslenska</option>
+							  <option value="Čeština">Čeština</option>
+							  <option value="Русский">Русский</option>
+							  <option value="ภาษาไทย">ภาษาไทย</option>
+							  <option value="中文 (简体)">中文 (简体)</option>
+							  <option value="中文 (繁體)">中文 (繁體)</option>
+							  <option value="日本語">日本語</option>
+							  <option value="한국어">한국어</option>
+							</select>
+						</div>
+						<div class="col-xs-6 col-md-6 col-lg-12">
+							<select>
+							  <option value="AED">AED</option>
+							  <option value="ARS">ARS</option>
+							  <option value="AUD">AUD</option>
+							  <option value="BGN">BGN</option>
+							  <option value="BRL">BRL</option>
+							  <option value="CAD">CAD</option>
+							  <option value="CHF">CHF</option>
+							  <option value="CLP">CLP</option>
+							  <option value="CNY">CNY</option>
+							  <option value="COP">COP</option>
+							  <option value="CRC">CRC</option>
+							  <option value="CZK">CZK</option>
+							  <option value="DKK">DKK</option>
+							  <option value="EUR">EUR</option>
+							  <option value="GBP">GBP</option>
+							  <option value="HKD">HKD</option>
+							  <option value="HRK">HRK</option>
+							  <option value="HUF">HUF</option>
+							  <option value="IDR">IDR</option>
+							  <option value="ILS">ILS</option>
+							  <option value="INR">INR</option>
+							  <option value="JPY">JPY</option>
+							  <option value="KRW">KRW</option>
+							  <option value="MAD">MAD</option>
+							  <option value="MXN">MXN</option>
+							  <option value="MYR">MYR</option>
+							  <option value="MYR">NOK</option>
+							  <option value="MYR">NZD</option>
+							  <option value="MYR" selected="selected">PEN</option>
+							  <option value="MYR">PHP</option>
+							  <option value="MYR">PLN</option>
+							  <option value="MYR">RON</option>
+							  <option value="MYR">RUB</option>
+							  <option value="MYR">SAR</option>
+							  <option value="MYR">SEK</option>
+							  <option value="MYR">SGD</option>
+							  <option value="MYR">THB</option>
+							  <option value="MYR">TRY</option>
+							  <option value="MYR">TWD</option>
+							  <option value="MYR">UAH</option>
+							  <option value="MYR">USD</option>
+							  <option value="MYR">UYU</option>
+							  <option value="MYR">VND</option>
+							  <option value="MYR">ZAR</option>							  
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="hidden-xs hidden-sm col-md-2 col-lg-2">
+					<p>Airbnb</p>
+					<ul>
+						<li><a href="#">Acerca de</a></li>
+						<li><a href="#">Empleo</a></li>
+						<li><a href="#">Prensa</a></li>
+						<li><a href="#">Políticas</a></li>
+						<li><a href="#">Ayuda</a></li>
+					</ul>
+				</div>
+				<div class="hidden-xs hidden-sm col-md-3 col-lg-3">
+					<p>Descubre Airbnb</p>
+					<ul>
+						<li><a href="#">Confianza y seguridad</a></li>
+						<li><a href="#">Crédito para viajar</a></li>
+						<li><a href="#">Cheques regalo</a></li>
+						<li><a href="#">Airbnb Action</a></li>
+						<li><a href="#">Viajes de negocios</a></li>
+						<li><a href="#">Guías</a></li>
+					</ul>
+				</div>
+				<div class="hidden-xs hidden-sm col-md-3 col-lg-3">
+					<p>Hospedar</p>
+					<ul>
+						<li><a href="#">Razones para hospedar</a></li>
+						<li><a href="#">Hospitalidad</a></li>
+						<li><a href="#">Ser un anfitrión responsable</a></li>
+					</ul>
+				</div>
+			</div>
+			<hr>
+			<div class="footer-part-two row">
+				<div class="col-xs-6 col-md-6 col-lg-6">
+					<div class="row">
+						<div class="col-xs-12 col-md-2 col-lg-2">
+							<img class="center-block img-responsive" src="img/logo-gray.png" alt="">
+						</div>
+						<div class="col-xs-12 col-md-10 col-lg-10">
+							<span>© Airbnb, Inc.</span>
+						</div>
+					</div>			
+				</div>
+				<div class="col-xs-6 col-md-6col-lg-6">
+					<div class="row">
+						<div class="text-right col-xs-12 col-sm-12 col-md-4 col-lg-4">
+							<a href="#">Términos y Privacidad</a>
+						</div>
+						<div class="text-center hidden-xs hidden-sm col-md-4  col-lg-4">
+							<a href="#">Mapa de Sitio</a>
+						</div>
+						<div class="hidden-xs hidden-sm col-md-4  col-lg-4">
+							<div class="row">
+								<div class="col-xs-4 col-md-4 col-lg-4">
+									<a href="#" class="footer-redes fa fa-facebook" ></a>
+								</div>
+								<div class="col-xs-4 col-lg-4">
+									<a href="#" class="footer-redes fa fa-twitter"></a>
+								</div>
+								<div class="col-xs-4 col-md-4 col-lg-4">
+									<a href="#" class="footer-redes fa fa-instagram"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</footer>
+	<script type="text/javascript" src="js/main.min.js"></script>
 </body>
 </html>
