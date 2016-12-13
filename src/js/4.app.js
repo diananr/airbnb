@@ -20,4 +20,16 @@ $(document).ready(function() {
 		itemsTablet: [768,4],
 		itemsMobile : [320,3]
 	});
+	$("#carousel-resultado-1").owlCarousel({
+		navigation : true,
+		slideSpeed : 300,
+		paginationSpeed : 400,
+		singleItem:true
+	});
+	$("#carousel-resultado-2").owlCarousel({
+		navigation : true,
+		slideSpeed : 300,
+		paginationSpeed : 400,
+		singleItem:true
+	});
 });
