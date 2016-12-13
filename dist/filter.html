@@ -60,10 +60,10 @@
 									<div class="col-lg-9">
 										<div class="row">
 											<div class="col-lg-4">
-												<input type="text" name="checkin">
+												<input type="text" name="checkin" placeholder="Llegada">
 											</div>
 											<div class="col-lg-4">
-												<input type="text" name="checkout">
+												<input type="text" name="checkout" placeholder="Salida">
 											</div>
 											<div class="col-lg-4">
 												<div class="guests-select">
@@ -90,7 +90,8 @@
 											<div class="col-lg-4">
 												<div class="div-gray">
 													<div>
-														<span>Casa entera</span>
+														<i class="fa fa-home" aria-hidden="true"></i>
+														<span>Casa entera</span> 
 													</div>
 													<div>
 														<input type="checkbox">
@@ -151,7 +152,7 @@
 							<div class="boton-advancedFilter">
 								<div class="row">
 									<div class="col-lg-5">
-										<button>Filtros</button>
+										<button id="buttonFilter"><strong>Filtros</strong></button>
 									</div>
 									<div class="text-right col-lg-7"><strong>Más de 300 alquileres</strong></div>
 								</div>
@@ -433,7 +434,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-5">
+					<div id="cont-map" class="col-lg-5">
 						<div id="map"></div>
 					</div>
 				</div>

@@ -4,6 +4,7 @@ var loadPag = function(){
 	carouselExperiences();
 	carouselSlider()
 	showMap();
+	filterView();
 }
 
 $(document).ready(loadPag);
@@ -58,8 +59,6 @@ var carouselExperiences = function(){
 	prev.html("<span class='glyphicon glyphicon-menu-left'></span>");
 	var next = $(".owl-next");
 	next.html("<span class='glyphicon glyphicon-menu-right'></span>");
-
-
 }
 
 var carouselSlider = function(){
@@ -123,5 +122,12 @@ var showMap = function(){
 		}));
 		marker.setPosition(place.geometry.location);
 		marker.setVisible(true);
+	});
+}
+
+var filterView = function(){
+	$("#buttonFilter").click(function(){
+    $(".option-advancedFilter").fadeToggle();
+    $(".container-results").toggleClass("ocultar");
 	});
 }
