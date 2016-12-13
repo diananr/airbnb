@@ -2,7 +2,10 @@
 @import "_functions";
 @import "_mixins";
 
-@media (min-width: 768px){
+
+@media (max-width: 768px){
+
+	// anabel: slider
 	.slider{
 		.slider-1{
 			padding: 4% 0 0 0 !important;
@@ -15,7 +18,7 @@
 				h6{
 					display: none;
 				}
-				div{
+				.link-desktop{
 					text-align: center;
 				}
 			}
@@ -34,7 +37,7 @@
 					h6{
 						display: none;
 					}
-					div{
+					.link-desktop{
 						margin-left: 4% !important; 
 					}
 				}
@@ -61,8 +64,9 @@
 		}
 		.slider-4{
 			.img{
+				// background-image:url(../img/slider_places_xs.jpg) !important;
 				height: 30em !important;
-				margin-right: 0!important;
+				margin: 0!important;
     		background-size: 76% !important;
 				.title{
 					h2{
@@ -78,142 +82,118 @@
 	}
 }
 
-// .slider{
-// 	.slider-1{
-// 		background-image:url("../img/slider_posters_lg.jpg");
-// 		@include background();
-// 		background-position: bottom;
-// 		padding: 4% 0 0 10%;
-//     background-size: 124%;
-//     height: 37em;
-// 		.title{
-// 			h2{
-// 				font-size: 320%;
-//     		font-weight: bold;
-// 			}
-// 			h6{
-// 				line-height: 1em;
-// 		    margin-top: 2%;
-// 		    font-size: 129%;
-// 				color: #6C6C6C;
-// 			}
-// 			h6 + div button{
-// 				margin-top: 3%;
-// 		    border: 2px solid #C8C8C8;
-// 		    padding: 1% 2% 1%;
-// 		    border-radius: 25px;
-// 				a{
-// 					color: #565656;
-// 				}
-// 			}
-// 		}
-// 	}
-// 	.slider-2{
-// 		background: linear-gradient(325deg, #AA2057, #FF9887,#FF7E75);
-// 		padding-bottom: 0 !important;
-// 		.img{
-// 			background-image:url("../img/slider_experiences_lg.png");
-// 			@include background();
-// 			background-position: left;
-// 			padding: 8% 0 0 3%;
-//     	background-size: 119%;
-// 	    height: 37em;
-// 	    .title{
-// 	    	color: white;
-// 				h2{
-// 					font-size: 330%;
-// 	    		font-weight: bold;
-// 				}
-// 				h6{
-// 					line-height: 135%;
-// 			    margin-top: 2%;
-// 			    font-size: 140%;
-// 				}
-// 				h6 + div button{
-// 					background-color:transparent;
-// 					margin-top: 2%;
-// 			    border: 2px solid #FFB1A7;
-// 			    padding: 1% 2% 1%;
-// 			    border-radius: 25px;
-// 					a{
-// 						color: #ffffff;
-// 					}
-// 				}
-// 			}
-// 		}
-// 	}
-// 	.slider-3{
-// 		background: linear-gradient(325deg, #FDAD95, #FCDECE,#FFEFD3);
-// 		padding-bottom: 0 !important;
-// 		.img{
-// 			background-image:url("../img/slider_places_lg.png");
-// 	    background-repeat: no-repeat;
-// 	    padding: 6% 0 0 2%;
-// 	    background-position: bottom right;
-// 	    background-size: 57%;
-// 	    margin: 0 13%;
-// 	    height: 37em;
-// 	    .title{
-// 				h2{
-// 			    margin-top: 9%;
-// 			    color: #484848;
-// 			    font-size: 361%;
-// 			    font-weight: 700;
-// 				}
-// 				h6{
-// 			    line-height: 140%;
-// 			    color: #5B5956;
-// 			    margin-top: 2%;
-// 			    font-size: 130%;
-// 				}
-// 				h6 + div button{
-// 					background-color: transparent !important;
-// 					margin-top: 3%;
-// 			    border: 2px solid #C7B5A7;
-// 			    padding: 1% 1% 1%;
-// 					border-radius: 25px;
-// 					a{
-// 						color: #64605D;
-// 					}
-// 				}
-// 			}
-// 		}
-// 	}
-// 	.slider-4{
-// 		background: linear-gradient(37deg,#E7E7E7,#ffffff,#ffffff,#ffffff);
-// 		padding-bottom: 0 !important;
-// 		.img{
-// 			background-image:url("../img/slider_keynote.jpg");
-// 			background-repeat:no-repeat;
-// 	    padding: 6% 0 0 1%;
-// 	    background-position: bottom right;
-// 	    background-size: 61%;
-// 	    margin: 0 9%;
-// 	    height: 37em;
-// 	    .title{
-// 				h2{
-// 					margin-top: 8%;
-// 			    color: #484848;
-// 			    font-size: 300%;
-// 			    font-weight: 700;;
-// 				}
-// 				h6{
 
-// 					color: #5B5956;
-// 			    font-size: 115%;
-// 			    line-height: 148%;
-// 				}
-// 				h6 + div button{
-// 					background-color: transparent !important;
-// 					margin-top: 1.5em;
-// 					border: 2px solid #C7B5A7;
-// 					padding: 8px 24px 9px;
-// 					border-radius: 100px;
-// 					a{
-// 						color: #64605D;
-// 					}
-// 				}
-// 			}
-// 		}
-// 	}
-// }
+@media (max-width: 320px){
+	// anabel: slider
+
+	.slider{
+		.slider-1{
+			height: 25em !important;
+			background-size: 200% !important; 
+			.title{
+				text-align: center;
+				h2{
+					font-size: 200% !important;
+				}
+				h6{
+					display: none;
+				}
+				.link-desktop{
+					display: none !important;
+				}
+				.link-responsive{
+					display: block !important;
+					button{
+						background-color: transparent !important;
+						margin-top: 2%;
+						border: transparent;
+						a{
+							color: #ffffff !important;
+						}
+					}
+				}
+			}
+		}
+		.slider-2{
+			background: linear-gradient(165deg, #AA2057, #FF9887,#FF7E75) !important;
+			.img{
+				height: 25em !important;
+				background-size: 210% !important;
+    		background-position: -98px bottom !important;
+				.title{
+					text-align: center;
+					h2{
+						font-size: 200% !important;
+					}
+					h6{
+						display: none;
+					}
+					.link-desktop{
+						display: none !important;
+					}
+					.link-responsive{
+						display: block !important;
+						button{
+							background-color: transparent !important;
+							margin-top: 2%;
+							border: transparent;
+							a{
+								color: #ffffff !important;
+							}
+						}
+					}
+				}
+			}
+		}
+		.slider-3{
+			.img{
+				text-align: center;
+				height: 25em !important;
+				margin-left: 0 !important;
+				background-position: 522px bottom!important;
+        background-size: 25% !important;
+				.title{
+					margin-right: 30% !important;
+					h2{
+						margin-right: 0 !important;
+					}
+					.link-desktop{
+						display: none !important;
+					}
+					.link-responsive{
+						display: block !important;
+						button{
+							background-color: transparent !important;
+							margin-top: 2%;
+							border: transparent;
+							a{
+								color: #6D6A6A !important;
+							}
+						}
+					}
+				}
+			}
+		}
+		.slider-4{
+			.img{
+				text-align: center;
+				height: 25em !important;
+				.title{
+					.link-desktop{
+						display: none !important;
+					}
+					.link-responsive{
+						display: block !important;
+						button{
+							margin-top: 2%;
+							border: transparent;
+							a{
+								color: #6D6A6A !important;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

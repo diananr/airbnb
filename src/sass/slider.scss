@@ -3,10 +3,10 @@
 @import "_mixins";
 
 *{
-	// padding: $pixel !important;
-	// margin: $pixel !important;
 	box-sizing: border-box;
 }
+
+// anabel: sliders
 .slider{
 	.slider-1{
 		background-image:url("../img/slider_posters_lg.jpg");
@@ -26,7 +26,7 @@
 		    font-size: 129%;
 				color: #6C6C6C;
 			}
-			h6 + div button{
+			.link-desktop button{
 				margin-top: 3%;
 		    border: 2px solid #C8C8C8;
 		    padding: 1% 2% 1%;
@@ -34,6 +34,9 @@
 				a{
 					color: #565656;
 				}
+			}
+			.link-responsive{
+				display: none;
 			}
 		}
 	}
@@ -58,7 +61,7 @@
 			    margin-top: 2%;
 			    font-size: 140%;
 				}
-				h6 + div button{
+				.link-desktop button{
 					background-color:transparent;
 					margin-top: 2%;
 			    border: 2px solid #FFB1A7;
@@ -67,6 +70,9 @@
 					a{
 						color: #ffffff;
 					}
+				}
+				.link-responsive{
+					display: none;
 				}
 			}
 		}
@@ -95,7 +101,7 @@
 			    margin-top: 2%;
 			    font-size: 130%;
 				}
-				h6 + div button{
+				.link-desktop button{
 					background-color: transparent !important;
 					margin-top: 3%;
 			    border: 2px solid #C7B5A7;
@@ -104,6 +110,9 @@
 					a{
 						color: #64605D;
 					}
+				}
+				.link-responsive{
+					display: none;
 				}
 			}
 		}
@@ -132,7 +141,7 @@
 			    font-size: 115%;
 			    line-height: 148%;
 				}
-				h6 + div button{
+				.link-desktop{
 					background-color: transparent !important;
 					margin-top: 1.5em;
 					border: 2px solid #C7B5A7;
@@ -141,6 +150,9 @@
 					a{
 						color: #64605D;
 					}
+				}
+				.link-responsive{
+					display: none;
 				}
 			}
 		}
