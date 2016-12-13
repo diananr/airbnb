@@ -14,31 +14,11 @@ var templateResults = '<div class="col-md-6 col-sm-6 col-xs-12 carousel">'+
 							'<p>**detail**</p>'+
 						'</div>';
 
-var ajaxAirbnb = function(){
-	$.ajax({
-		url:"http://localhost:3028/airbnb.json",
-		type: "GET",
-		success: function(response){
-			var newTemplate= "";
-			$.each(response, function(i, airbnb){
-				newTemplate += templateResults
-								.replace("**img1**", airbnb.img1)
-								.replace("**img2**", airbnb.img2)
-								.replace("**img3**", airbnb.img3)
-								.replace("**cost**", airbnb.price)
-								.replace("**imgp**", airbnb.owner)
-								.replace("**title**", airbnb.title)
-								.replace("**detail**", airbnb.details);
-	        });
-			$("#eachresult").html(newTemplate);
-		}
-	});
-}
-
 var loadPag = function(){
 	carouselExperiences();
 	carouselSlider()
 	showMap();
+	filterView();
 	ajaxAirbnb();
 }
 
@@ -160,4 +140,30 @@ var showMap = function(){
 	});
 }
 
+var filterView = function(){
+	$("#buttonFilter").click(function(){
+    $(".option-advancedFilter").fadeToggle();
+    $(".container-results").toggleClass("ocultar");
+	});
+}
+var ajaxAirbnb = function(){
+	$.ajax({
+		url:"http://localhost:3028/airbnb.json",
+		type: "GET",
+		success: function(response){
+			var newTemplate= "";
+			$.each(response, function(i, airbnb){
+				newTemplate += templateResults
+								.replace("**img1**", airbnb.img1)
+								.replace("**img2**", airbnb.img2)
+								.replace("**img3**", airbnb.img3)
+								.replace("**cost**", airbnb.price)
+								.replace("**imgp**", airbnb.owner)
+								.replace("**title**", airbnb.title)
+								.replace("**detail**", airbnb.details);
+	        });
+			$("#eachresult").html(newTemplate);
+		}
+	});
+}
 
