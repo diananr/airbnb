@@ -136,13 +136,15 @@
 			    line-height: 148%;
 				}
 				.link-desktop{
-					background-color: transparent !important;
-					margin-top: 1.5em;
-					border: 2px solid #C7B5A7;
-					padding: 8px 24px 9px;
-					border-radius: 100px;
-					a{
-						color: #64605D;
+					button{
+						background-color: transparent !important;
+						margin-top: 1.5em;
+						border: 2px solid #C7B5A7;
+						padding: 8px 24px 9px;
+						border-radius: 100px;
+						a{
+							color: #64605D;
+						}
 					}
 				}
 				.link-responsive{
