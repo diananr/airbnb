@@ -18,6 +18,7 @@ var loadPag = function(){
 	carouselExperiences();
 	carouselSlider()
 	showMap();
+	filterView();
 	ajaxAirbnb();
 }
 
@@ -139,6 +140,13 @@ var showMap = function(){
 	});
 }
 
+var filterView = function(){
+	$("#buttonFilter").click(function(){
+    $(".option-advancedFilter").fadeToggle();
+    $(".container-results").toggleClass("ocultar");
+	});
+}
+
 var ajaxAirbnb = function(){
 	console.log("entro a la funcion");
 	$.getJSON("airbnb.json",
@@ -161,4 +169,3 @@ var ajaxAirbnb = function(){
 		}
 	);
 }
-
