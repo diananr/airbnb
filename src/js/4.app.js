@@ -143,7 +143,6 @@ var ajaxAirbnb = function(){
 	console.log("entro a la funcion");
 	$.getJSON("airbnb.json",
 		function(response){
-			console.log("entrofuncion");
 			var newTemplate= "";
 			$.each(response, function(i, airbnb){
 				console.log("entro al template");
