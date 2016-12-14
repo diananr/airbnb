@@ -5,6 +5,7 @@ var loadPag = function(){
 	showMap();
 }
 
+
 $(document).ready(loadPag);
 
 var carouselExperiences = function(){
