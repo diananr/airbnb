@@ -184,6 +184,7 @@ var sanIsidroCity = "San Isidro, Perú";
 
 $("#search-location").change(function(){
 	$.getJSON("http://localhost:3028/airbnb.json", function(response){
+		// alert(response.results1[0.filtros]);
 		var complete = "";
 		if (valueInputSearch.value == mirafloresCity){
 			$.each(response.results1, function(i, homes){
@@ -197,19 +198,7 @@ $("#search-location").change(function(){
 			var child = $("#eachresult").children()
 			child.remove();
 			$("#eachresult").append(complete);
-
-			$.each(response.results1, function(i, filtros){
-				var checkboxFilter = $('.checkbox input[type="checkbox"]');
-				for (var i = 0; i < checkboxFilter.length; i++){
-	        var ch = checkboxFilter[i].checked;
-					if(ch == true){
-						if($(checkboxFilter[i]).parent().text() == filtros.filtros){
-							alert("hola mundo");
-						}
-					}
-				}
-			});
-
+			
 		}else if (valueInputSearch.value == sanIsidroCity){
 			$.each(response.results2, function(i, homes){
 				complete += templateResults
@@ -224,4 +213,4 @@ $("#search-location").change(function(){
 			$("#eachresult").append(complete);
 		}
 	});
-})
+});
