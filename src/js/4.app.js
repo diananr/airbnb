@@ -126,7 +126,29 @@ var showMap = function(){
 	});
 }
 
+//Focus 
 
+$("#input-location").keydown(function(evento) {
+  var ascii = evento.keyCode;
+  if (ascii==13) {
+    $('#input-location').keyup(function(){
+      var $inputStartDate=$(this).parent().next().children().eq(1).children().eq(0).children().eq(0);
+      $inputStartDate.focus(); 
+    });
+  }   
+});
+
+$("#input-start-date").keydown(function(evento) {
+  var ascii = evento.keyCode;
+  if(ascii==13){
+    var $inputDate=$(this).parent().next().next().children();
+    $inputDate.focus();  
+  }
+});
+
+$("#btn-search").on("click",function(){
+  window.location="filter.html";
+});
 	
 		
 
