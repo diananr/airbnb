@@ -147,7 +147,7 @@ var filterView = function(){
     $(".container-results").toggleClass("ocultar");
 	});
 }
-//ajax airbnb
+
 var templateResults = '<div class="col-md-6 col-sm-6 col-xs-12 carousel">'+
 												'<div id="carousel-result-1" class="owl-carousel owl-theme">'+
 													'<div class="item"><img src="{{img1}}" alt="Room" class="img-json"></div>'+
@@ -173,6 +173,7 @@ var sanIsidroCity = "San Isidro, Perú";
 
 $("#search-location").change(function(){
 	$.getJSON("http://localhost:3028/airbnb.json", function(response){
+		// alert(response.results1[0.filtros]);
 		var complete = "";
 		if (valueInputSearch.value == mirafloresCity){
 			$.each(response.results1, function(i, homes){

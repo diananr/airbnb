@@ -119,6 +119,36 @@
             "title":"Amplio Departamento",
             "datails":"Habitación privada",
             "filtros": "Daly City"
+        },
+                {
+            "img1":"https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ0qFEfFaTlgC3ch54AGhJWWgUUYV7eKDSIYSKecV_lHK8ppxSoxQ",
+            "img2":"https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS7tSJ1uZl8tx91Az61_jsFtHoqQLQ_QQaAW7RujGoJZBKRpOqLTQ",
+            "img3":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtRC9M2hpstIk_Fq7AYD037XyYV7h2uwAgpnbPUwzlel1Anb88",
+            "price": "s/. 230",
+            "owner":"https://files.genial.guru/files/news/part_12/122655/631205-650-1453285664-5_3.jpg",
+            "title":"Lindo departamento",
+            "datails":"Habitación privada",
+            "filtros": "Admite Mascotas"
+        },
+        {
+            "img1":"https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRDv9WNR7BUawpteyTbrRhlhQbadtGUJaXp2usAdjqcwvUI0FGu",
+            "img2":"https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTuQwr4tmdcz6eG1HP2yfdVDphlkHavhNWga0V57XEycnIlvSeU",
+            "img3":"https://a1.muscache.com/im/pictures/ce68b288-bbd2-4a4a-9546-9ed81aa8c86d.jpg?aki_policy=x_medium",
+            "price": "s/. 120",
+            "owner":"http://www.lasprovincias.es/las_provincias/noticias/201505/12/media/cortadas/marta-dabbas--490x490.jpg",
+            "title":"Amplio Departamento",
+            "datails":"Habitación privada",
+            "filtros": "Apto para eventos"
+        },
+        {
+            "img1":"http://1www.ecestaticos.com/imagestatic/clipping/11e/c69/11ec69a2e2bd99e70f5b2b092dcdfc4b/vrumi-el-airbnb-para-alquilar-una-habitacion-de-tu-casa-por-horas.jpg?mtime=1435248379",
+            "img2":"https://megaricoss.files.wordpress.com/2015/11/atlantic-penthouse-e28093-vedado-1.jpg?w=1160",
+            "img3":"https://es.habcdn.com/photos/project/big/fachada-casa-dragones-airbnb-1024x682_809621.jpg",
+            "price": "s/. 340",
+            "owner":"https://losmuertevideanos.files.wordpress.com/2011/04/3ba8e-027johnmcenroe.jpg",
+            "title":"Miraflores Private Room",
+            "datails":"Habitación privada",
+            "filtros": "Apto para fumadores"
         }
     ],
     "results2":[
@@ -129,7 +159,8 @@
             "price": "s/. 430",
             "owner":"http://e03-expansion.uecdn.es/assets/multimedia/imagenes/2016/11/21/14797574410150.jpg",
             "title":"San Isidro Private Room",
-            "datails":"Casa/apto. entero"
+            "datails":"Casa/apto. entero",
+            "filtros": "Internet inalámbrico (Wifi)"
         },
         {
             "img1":"http://www.telegraph.co.uk/content/dam/property/2016/04/08/Shoreditch_Warehouse_Loft-large_trans++ZgEkZX3M936N5BQK4Va8RWtT0gK_6EfZT336f62EI5U.jpg",
@@ -138,7 +169,8 @@
             "price": "s/. 240",
             "owner":"http://estaticos.elperiodico.com/resources/jpg/1/6/mar-alarcon-fundadora-start-up-socialcar-1464276357861.jpg",
             "title":"Apartamento de diseño",
-            "datails":"Casa/apto"
+            "datails":"Casa/apto",
+            "filtros": "TV"
         },
         {
             "img1":"http://www.fodors.com/wire/5-house-airbnb-rutherford-new-jersey.jpg",
@@ -147,7 +179,8 @@
             "price": "s/. 190",
             "owner":"http://www.elnuevoherald.com/noticias/finanzas/xqanpi/picture92173282/ALTERNATES/FREE_640/Annette%20Foto%20buena%201%20(1)",
             "title":"Room in San Isidro",
-            "datails":"Habitación privada"
+            "datails":"Habitación privada",
+            "filtros": "Cocina"
         },
         {
             "img1":"http://assets.inhabitat.com/wp-content/blogs.dir/1/files/2016/10/Beach-House-by-Frank-Lloyd-Wright-7.jpg",
@@ -156,7 +189,38 @@
             "price": "s/. 225",
             "owner":"http://www.recreoviral.com/wp-content/uploads/2015/08/Noruego-combina-las-caras-de-celebridades-5.jpg",
             "title":"Habitación con vista al mar",
-            "datails":"Habitación privada"
+            "datails":"Habitación privada",
+            "filtros": "Edificio con ascensor"
+        },
+                {
+            "img1":"https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ0qFEfFaTlgC3ch54AGhJWWgUUYV7eKDSIYSKecV_lHK8ppxSoxQ",
+            "img2":"https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS7tSJ1uZl8tx91Az61_jsFtHoqQLQ_QQaAW7RujGoJZBKRpOqLTQ",
+            "img3":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtRC9M2hpstIk_Fq7AYD037XyYV7h2uwAgpnbPUwzlel1Anb88",
+            "price": "s/. 230",
+            "owner":"https://files.genial.guru/files/news/part_12/122655/631205-650-1453285664-5_3.jpg",
+            "title":"Lindo departamento",
+            "datails":"Habitación privada",
+            "filtros": "Admite Mascotas"
+        },
+        {
+            "img1":"https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRDv9WNR7BUawpteyTbrRhlhQbadtGUJaXp2usAdjqcwvUI0FGu",
+            "img2":"https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTuQwr4tmdcz6eG1HP2yfdVDphlkHavhNWga0V57XEycnIlvSeU",
+            "img3":"https://a1.muscache.com/im/pictures/ce68b288-bbd2-4a4a-9546-9ed81aa8c86d.jpg?aki_policy=x_medium",
+            "price": "s/. 120",
+            "owner":"http://www.lasprovincias.es/las_provincias/noticias/201505/12/media/cortadas/marta-dabbas--490x490.jpg",
+            "title":"Amplio Departamento",
+            "datails":"Habitación privada",
+            "filtros": "Apto para eventos"
+        },
+        {
+            "img1":"http://1www.ecestaticos.com/imagestatic/clipping/11e/c69/11ec69a2e2bd99e70f5b2b092dcdfc4b/vrumi-el-airbnb-para-alquilar-una-habitacion-de-tu-casa-por-horas.jpg?mtime=1435248379",
+            "img2":"https://megaricoss.files.wordpress.com/2015/11/atlantic-penthouse-e28093-vedado-1.jpg?w=1160",
+            "img3":"https://es.habcdn.com/photos/project/big/fachada-casa-dragones-airbnb-1024x682_809621.jpg",
+            "price": "s/. 340",
+            "owner":"https://losmuertevideanos.files.wordpress.com/2011/04/3ba8e-027johnmcenroe.jpg",
+            "title":"Miraflores Private Room",
+            "datails":"Habitación privada",
+            "filtros": "Apto para fumadores"
         },
         {
             "img1":"http://travelnoire.com/wp-content/uploads/2015/06/airbnb.jpg",
@@ -165,7 +229,8 @@
             "price": "s/. 230",
             "owner":"http://e03-expansion.uecdn.es/assets/multimedia/imagenes/2016/11/21/14797574410150.jpg",
             "title":"San Isidro Private Room",
-            "datails":"Casa/apto. entero"
+            "datails":"Casa/apto. entero",
+            "filtros": "Gimnasio"
         },
         {
             "img1":"http://www.telegraph.co.uk/content/dam/property/2016/04/08/Shoreditch_Warehouse_Loft-large_trans++ZgEkZX3M936N5BQK4Va8RWtT0gK_6EfZT336f62EI5U.jpg",
@@ -174,7 +239,8 @@
             "price": "s/. 140",
             "owner":"http://estaticos.elperiodico.com/resources/jpg/1/6/mar-alarcon-fundadora-start-up-socialcar-1464276357861.jpg",
             "title":"Apartamento de diseño",
-            "datails":"Casa/apto"
+            "datails":"Casa/apto",
+            "filtros": "Parking gratuito incluido"
         },
         {
             "img1":"http://www.fodors.com/wire/5-house-airbnb-rutherford-new-jersey.jpg",
@@ -183,7 +249,8 @@
             "price": "s/. 290",
             "owner":"http://www.elnuevoherald.com/noticias/finanzas/xqanpi/picture92173282/ALTERNATES/FREE_640/Annette%20Foto%20buena%201%20(1)",
             "title":"Room in San Isidro",
-            "datails":"Habitación privada"
+            "datails":"Habitación privada",
+            "filtros": "Admite Mascotas"
         },
         {
             "img1":"http://assets.inhabitat.com/wp-content/blogs.dir/1/files/2016/10/Beach-House-by-Frank-Lloyd-Wright-7.jpg",
@@ -192,7 +259,8 @@
             "price": "s/. 425",
             "owner":"http://www.recreoviral.com/wp-content/uploads/2015/08/Noruego-combina-las-caras-de-celebridades-5.jpg",
             "title":"Habitación con vista al mar",
-            "datails":"Habitación privada"
+            "datails":"Habitación privada",
+            "filtros": "Apto para eventos"
         },
         {
             "img1":"http://travelnoire.com/wp-content/uploads/2015/06/airbnb.jpg",
@@ -201,7 +269,8 @@
             "price": "s/. 430",
             "owner":"http://e03-expansion.uecdn.es/assets/multimedia/imagenes/2016/11/21/14797574410150.jpg",
             "title":"San Isidro Private Room",
-            "datails":"Casa/apto. entero"
+            "datails":"Casa/apto. entero",
+            "filtros": "Apto para fumadores"
         },
         {
             "img1":"http://www.telegraph.co.uk/content/dam/property/2016/04/08/Shoreditch_Warehouse_Loft-large_trans++ZgEkZX3M936N5BQK4Va8RWtT0gK_6EfZT336f62EI5U.jpg",
@@ -210,7 +279,8 @@
             "price": "s/. 240",
             "owner":"http://estaticos.elperiodico.com/resources/jpg/1/6/mar-alarcon-fundadora-start-up-socialcar-1464276357861.jpg",
             "title":"Apartamento de diseño",
-            "datails":"Casa/apto"
+            "datails":"Casa/apto",
+            "filtros": "SoMa"
         },
         {
             "img1":"http://www.fodors.com/wire/5-house-airbnb-rutherford-new-jersey.jpg",
@@ -219,7 +289,8 @@
             "price": "s/. 190",
             "owner":"http://www.elnuevoherald.com/noticias/finanzas/xqanpi/picture92173282/ALTERNATES/FREE_640/Annette%20Foto%20buena%201%20(1)",
             "title":"Room in San Isidro",
-            "datails":"Habitación privada"
+            "datails":"Habitación privada",
+            "filtros": "Missin District"
         },
         {
             "img1":"http://assets.inhabitat.com/wp-content/blogs.dir/1/files/2016/10/Beach-House-by-Frank-Lloyd-Wright-7.jpg",
@@ -228,7 +299,8 @@
             "price": "s/. 225",
             "owner":"http://www.recreoviral.com/wp-content/uploads/2015/08/Noruego-combina-las-caras-de-celebridades-5.jpg",
             "title":"Habitación con vista al mar",
-            "datails":"Habitación privada"
+            "datails":"Habitación privada",
+            "filtros": "Daly City"
         }  
     ]
 }
