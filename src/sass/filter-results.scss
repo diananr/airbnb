@@ -1,0 +1,96 @@
+.container-results{
+	margin-top: 35px;
+	margin-bottom: 30px;
+	.carousel{
+		position: relative;
+		.hearth{
+			color: #fff;
+			opacity: 0.8;
+			font-size: 40px;
+			position: absolute;
+			right: 25px;
+			top: 10px;
+		}
+		.hearth-2{
+			color: rgba(0,0,0,0.3);
+			font-size: 25px;
+			position: absolute;
+			right: 31px;
+			top: 17px;
+		}
+		.hearth-2:hover{
+			color: rgba(0,0,0,0.6);
+		}
+		.cost{
+			font-family: Josefin Sans;
+			font-size: 24px;
+			position: absolute;
+			color: white;
+			padding: 10px;
+			top: 155px;
+			background-color: rgba(45,45,45,0.9);
+			.ray{
+				color: #ffb400;
+				font-size: 17px;
+			}
+		}
+		.owner{
+			position: absolute;
+			right: 25px;
+			top: 205px;
+			width: 56px;
+			height: 56px;
+			border-radius: 50%;
+			border: 2px solid white;
+			img{
+				width: 100%;
+				border-radius: 50%;
+			}
+		}
+		p{
+			color: #767676;
+		}
+		h4{
+			width: 80%;
+			margin-bottom: 3px;
+		}
+		#carousel-result-1, #carousel-result-2,#carousel-result-3, #carousel-result-4{
+			.owl-wrapper-outer{
+				position: relative;
+				.item{
+					img{
+						display: block;
+						width: 100%;
+						height: auto;
+					}
+				}
+			}
+			.owl-buttons{
+				color: transparent;
+				display: none;
+			}
+		}
+		#carousel-result-1:hover, #carousel-result-2:hover, #carousel-result-3:hover, #carousel-result-4:hover{
+			.owl-buttons{
+				display: block;
+				position: absolute;
+				top: 30%;
+				width: 91%;
+				.owl-prev{
+					float: left;
+					font-size:34px;
+					color: white;
+					opacity: 0.9;
+					cursor: pointer;
+				}
+				.owl-next{
+					float: right;
+					font-size:34px;
+					color: white;
+					opacity: 0.8;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+}
