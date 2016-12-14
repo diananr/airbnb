@@ -156,6 +156,8 @@ var filterView = function(){
 	});
 }
 
+
+
 var templateResults = '<div class="col-md-6 col-sm-6 col-xs-12 carousel">'+
 												'<div id="carousel-result-1" class="owl-carousel owl-theme">'+
 													'<div class="item"><img src="{{img1}}" alt="Room" class="img-json"></div>'+
