@@ -57,13 +57,13 @@
 											<label>Fechas</label>
 										</div>
 									</div>
-									<div class="col-lg-9">
+									<div class="col-lg-10">
 										<div class="row">
 											<div class="col-lg-4">
-												<input type="text" name="checkin" placeholder="Llegada">
+												<input id="datepicker" type="text" name="checkin" placeholder="Llegada">
 											</div>
 											<div class="col-lg-4">
-												<input type="text" name="checkout" placeholder="Salida">
+												<input id="datepicker2" type="text" name="checkout" placeholder="Salida">
 											</div>
 											<div class="col-lg-4">
 												<div class="guests-select">
@@ -85,7 +85,7 @@
 											<i class="glyphicon glyphicon-question-sign"></i>
 										</div>
 									</div>
-									<div class="col-lg-9">
+									<div class="col-lg-10">
 										<div class="row">
 											<div class="col-lg-4">
 												<div class="div-gray">
@@ -129,20 +129,36 @@
 											<label>Rango de precios</label>
 										</div>
 									</div>
-									<div class="col-lg-9"></div>
+									<div class="col-lg-9">
+										<div id="slider-range"></div>
+										<p>
+										  <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+										  <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+										</p>
+									</div>
 								</div>
 							</div>
 							<div class="filters-section">
 								<div class="row">
 									<div class="col-lg-2">
 										<div class="subtitle">
-											<label>Reserva inmediata</label>
+											<i id="icon-ray" class="glyphicon glyphicon-flash"></i>
+											<span class="text-center">Reserva inmediata</span>
 										</div>
 									</div>
-									<div class="col-lg-9">
+									<div class="col-lg-8">
 										<div class="publicity">
 											<span>Anuncios que no requieren que el anfitrión acepte la solicitud.</span>
 											<label></label>
+										</div>
+									</div>
+									<div class="col-lg-2">
+										<div class="onoffswitch">
+									    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch">
+									    <label class="onoffswitch-label" for="myonoffswitch">
+									        <span class="onoffswitch-inner"></span>
+									        <span class="onoffswitch-switch"></span>
+									    </label>
 										</div>
 									</div>
 								</div>
@@ -433,8 +449,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="buttton-cancel">
-							
+						<div class="buttton-cancel">				
 						</div>
 					</div>
 					<div id="cont-map" class="col-lg-5">

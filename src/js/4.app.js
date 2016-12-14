@@ -20,6 +20,7 @@ var loadPag = function(){
 	showMap();
 	filterView();
 	ajaxAirbnb();
+	searchHome();
 }
 
 $(document).ready(loadPag);
@@ -104,41 +105,38 @@ var showMap = function(){
 
 	//*autocomplete*//
 	var input =  document.getElementById("search-location");
-
 	var autocomplete = new google.maps.places.Autocomplete(input);
 	  autocomplete.bindTo('bounds', map);
-
 	  var marker = new google.maps.Marker({
-		map: map,
-		anchorPoint: new google.maps.Point(0, -29)
-	});
+			map: map,
+			anchorPoint: new google.maps.Point(0, -29)
+		});
 
 	  autocomplete.addListener('place_changed', function() {
-		marker.setVisible(false);
-		var place = autocomplete.getPlace();
-		if (!place.geometry) {
-		  window.alert("Autocomplete's returned place contains no geometry");
-		  return;
-		}
-
+			marker.setVisible(false);
+			var place = autocomplete.getPlace();
+			if (!place.geometry) {
+			  window.alert("Autocomplete's returned place contains no geometry");
+			  return;
+			}
 		// If the place has a geometry, then present it on a map.
-		if (place.geometry.viewport) {
-		  map.fitBounds(place.geometry.viewport);
-		} else {
-		  map.setCenter(place.geometry.location);
-		  map.setZoom(17);  // Why 17? Because it looks good.
-		}
-		marker.setIcon(/** @type {google.maps.Icon} */({
-		  url: place.icon,
-		  size: new google.maps.Size(71, 71),
-		  origin: new google.maps.Point(0, 0),
-		  anchor: new google.maps.Point(17, 34),
-		  scaledSize: new google.maps.Size(35, 35)
-		}));
-		marker.setPosition(place.geometry.location);
-		marker.setVisible(true);
-	});
-}
+			if (place.geometry.viewport) {
+			  map.fitBounds(place.geometry.viewport);
+			} else {
+			  map.setCenter(place.geometry.location);
+			  map.setZoom(17);  // Why 17? Because it looks good.
+			}
+			marker.setIcon(/** @type {google.maps.Icon} */({
+			  url: place.icon,
+			  size: new google.maps.Size(71, 71),
+			  origin: new google.maps.Point(0, 0),
+			  anchor: new google.maps.Point(17, 34),
+			  scaledSize: new google.maps.Size(35, 35)
+			}));
+			marker.setPosition(place.geometry.location);
+			marker.setVisible(true);
+		});
+	}
 
 var filterView = function(){
 	$("#buttonFilter").click(function(){
@@ -169,3 +167,68 @@ var ajaxAirbnb = function(){
 		}
 	);
 }
+
+$(function () {
+		$("#datepicker").datepicker({
+		  dateFormat: "dd-mm-yy",
+		  firstDay: 1,
+		  dayNamesMin: ["Do", "Lu", "Ma", "Mi", "Ju", "Vi", "Sa"],
+		  dayNamesShort: ["Dom", "Lun", "Mar", "Mie", "Jue", "Vie", "Sab"],
+		  monthNames: 
+		      ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio",
+		      "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"],
+		  monthNamesShort: 
+		      ["Ene", "Feb", "Mar", "Abr", "May", "Jun",
+		      "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"]
+		});
+		$("#datepicker2").datepicker({
+		  dateFormat: "dd-mm-yy",
+		  firstDay: 1,
+		  dayNamesMin: ["Do", "Lu", "Ma", "Mi", "Ju", "Vi", "Sa"],
+		  dayNamesShort: ["Dom", "Lun", "Mar", "Mie", "Jue", "Vie", "Sab"],
+		  monthNames: 
+		      ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio",
+		      "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"],
+		  monthNamesShort: 
+		      ["Ene", "Feb", "Mar", "Abr", "May", "Jun",
+		      "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"]
+		});
+		$("#datepicker3").datepicker({
+		  dateFormat: "dd-mm-yy",
+		  firstDay: 1,
+		  dayNamesMin: ["Do", "Lu", "Ma", "Mi", "Ju", "Vi", "Sa"],
+		  dayNamesShort: ["Dom", "Lun", "Mar", "Mie", "Jue", "Vie", "Sab"],
+		  monthNames: 
+		      ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio",
+		      "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"],
+		  monthNamesShort: 
+		      ["Ene", "Feb", "Mar", "Abr", "May", "Jun",
+		      "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"]
+		});
+		$("#datepicker4").datepicker({
+		  dateFormat: "dd-mm-yy",
+		  firstDay: 1,
+		  dayNamesMin: ["Do", "Lu", "Ma", "Mi", "Ju", "Vi", "Sa"],
+		  dayNamesShort: ["Dom", "Lun", "Mar", "Mie", "Jue", "Vie", "Sab"],
+		  monthNames: 
+		      ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio",
+		      "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"],
+		  monthNamesShort: 
+		      ["Ene", "Feb", "Mar", "Abr", "May", "Jun",
+		      "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"]
+		});
+});
+
+$( function() {
+  $( "#slider-range" ).slider({
+    range: true,
+    min: 0,
+    max: 500,
+    values: [ 75, 300 ],
+    slide: function( event, ui ) {
+      $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+    }
+  });
+  $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
+    " - $" + $( "#slider-range" ).slider( "values", 1 ) );
+});
