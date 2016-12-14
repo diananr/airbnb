@@ -7,6 +7,9 @@
 
 	// anabel: slider
 	.slider{
+		.btn-slider-preview,.btn-slider-next{
+			top: 17% !important;
+		}
 		.slider-1{
 			padding: 4% 0 0 0 !important;
 			height: 30em !important;
@@ -48,9 +51,8 @@
 			.img{
 				height: 30em !important;
 				background-image:url(../img/slider_places_xs.jpg) !important;
-				margin: 0 0 0 13% !important;
-				background-size: 89%!important;
-    		background-position: bottom center !important;
+				background-size: 43%!important;
+    		background-position: 1 bottom center !important;
 				.title{
 					h2{
 						margin: 16% 0 0 0 !important;
@@ -85,13 +87,17 @@
 
 @media (max-width: 320px){
 	.slider{
+		.btn-slider-preview,.btn-slider-next{
+			display: none !important;
+		}
 		.slider-1{
 			height: 25em !important;
 			background-size: 200% !important; 
 			.title{
 				text-align: center;
 				h2{
-					font-size: 200% !important;
+					margin-top: 3em !important;
+					font-size: 135% !important;
 				}
 				h6{
 					display: none;
@@ -106,7 +112,7 @@
 						margin-top: 2%;
 						border: transparent;
 						a{
-							color: #ffffff !important;
+							color: #363535 !important;
 						}
 					}
 				}
@@ -121,7 +127,7 @@
 				.title{
 					text-align: center;
 					h2{
-						font-size: 200% !important;
+						font-size: 170% !important;
 					}
 					h6{
 						display: none;
@@ -148,11 +154,13 @@
 				text-align: center;
 				height: 25em !important;
 				margin-left: 0 !important;
-				background-position: 522px bottom!important;
-        background-size: 25% !important;
+				background-position: 110px bottom!important;
+        background-size: 45% !important;
 				.title{
-					margin-right: 30% !important;
+					text-align: center !important;
+					margin-left: 3.5em !important;
 					h2{
+						font-size: 155% !important; 
 						margin-right: 0 !important;
 					}
 					.link-desktop{
@@ -164,6 +172,7 @@
 							background-color: transparent !important;
 							margin-top: 2%;
 							border: transparent;
+							font-size: 110% !important;
 							a{
 								color: #6D6A6A !important;
 							}
@@ -177,6 +186,12 @@
 				text-align: center;
 				height: 25em !important;
 				.title{
+					h2{
+						font-size: 160% !important;
+						br{
+							display: none;
+						}
+					}
 					.link-desktop{
 						display: none !important;
 					}
