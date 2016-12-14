@@ -2,10 +2,48 @@
 @import "_functions";
 @import "_mixins";
 
-*{
-	box-sizing: border-box;
+html{
+	overflow-x: hidden;
 }
+
 .slider{
+	.btn-slider-preview,.btn-slider-next{
+		display: none;
+	}
+	&:hover{
+		.btn-slider-preview{
+			display: inline-block;
+	    position: absolute;
+	    top: 34%;
+	    margin: 2% 1.5%;
+	    button{
+	    	background-color: rgba(0, 0, 0, 0.49);
+		    border: transparent;
+		    color: white;
+		    border-radius: 250px;
+		    font-size: 143%;
+		    padding: 0.8em 0.9em 0.5em;
+	    }
+		}
+		.btn-slider-next{
+			display: inline-block;
+	    position: absolute;
+	    top: 34%;
+	    right: 0;
+	    margin: 2% 1.5%;
+	    button{
+	    	background-color: rgba(0, 0, 0, 0.49);
+		    border: transparent;
+		    color: white;
+		    border-radius: 250px;
+		    font-size: 143%;
+		    padding: 0.8em 0.9em 0.5em;
+	    }
+		}
+		.next-preview:hover{
+			background-color: rgba(0, 0, 0, 0.79);
+		}
+	}
 	.slider-1{
 		background-image:url("../img/slider_posters_lg.jpg");
 		@include background();
@@ -140,13 +178,15 @@
 			    line-height: 148%;
 				}
 				.link-desktop{
-					background-color: transparent !important;
-					margin-top: 1.5em;
-					border: 2px solid #C7B5A7;
-					padding: 8px 24px 9px;
-					border-radius: 100px;
-					a{
-						color: #64605D;
+					button{
+						background-color: transparent !important;
+						margin-top: 1.5em;
+						border: 2px solid #C7B5A7;
+						padding: 8px 24px 9px;
+						border-radius: 100px;
+						a{
+							color: #64605D;
+						}
 					}
 				}
 				.link-responsive{
