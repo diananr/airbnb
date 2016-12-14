@@ -5,9 +5,8 @@ var loadPag = function(){
 	carouselSlider();
 	showMap();
 	filterView();
-	// ajaxAirbnb();
+	// searchHome();
 }
-
 
 $(document).ready(loadPag);
 
@@ -62,9 +61,8 @@ var carouselExperiences = function(){
 	var next = $(".owl-next");
 	next.html("<span class='glyphicon glyphicon-menu-right'></span>");
 }
-
 var slideIndex = 0;
-	var i = 0;
+var i = 0;
 var carouselSlider = function(){
 	var x = document.querySelectorAll(".slider-carrusel");
 	for (i = 0; i < x.length; i++) {
@@ -74,9 +72,8 @@ var carouselSlider = function(){
 	if (slideIndex > x.length) {slideIndex = 1}
 	  $(x[slideIndex-1]).fadeIn(20);
 }
-
 var set = setInterval(carouselSlider, 10000);
-$('#next').click(function() {
+	$('#next').click(function() {
   clearInterval(carouselSlider);
   i += 1;
   var d = $(".slider-carrusel");
@@ -86,7 +83,6 @@ $('#next').click(function() {
   }
   carouselSlider();
 });
-
 $('#preview').click(function() {
   // clearInterval(carouselSlider);
   var d = $(".slider-carrusel");
@@ -113,14 +109,12 @@ var showMap = function(){
 
 	//*autocomplete*//
 	var input =  document.getElementById("search-location");
-
 	var autocomplete = new google.maps.places.Autocomplete(input);
 	  autocomplete.bindTo('bounds', map);
-
-	 var marker = new google.maps.Marker({
-		map: map,
-		anchorPoint: new google.maps.Point(0, -29)
-	});
+	  var marker = new google.maps.Marker({
+			map: map,
+			anchorPoint: new google.maps.Point(0, -29)
+		});
 
 	 autocomplete.addListener('place_changed', function() {
 		marker.setVisible(false);
@@ -160,7 +154,7 @@ $("#input-location").keydown(function(evento) {
   }   
 });
 
-$("#input-start-date").keydown(function(evento) {
+$("#datepicker").keydown(function(evento) {
   var ascii = evento.keyCode;
   if(ascii==13){
     var $inputDate=$(this).parent().next().next().children();
@@ -172,15 +166,12 @@ $("#btn-search").on("click",function(){
   window.location="filter.html";
 });
 	
-
 var filterView = function(){
 	$("#buttonFilter").click(function(){
     $(".option-advancedFilter").fadeToggle();
     $(".container-results").toggleClass("ocultar");
 	});
 }
-
-
 
 var templateResults = '<div class="col-md-6 col-sm-6 col-xs-12 carousel">'+
 												'<div id="carousel-result-1" class="owl-carousel owl-theme">'+
@@ -200,7 +191,6 @@ var templateResults = '<div class="col-md-6 col-sm-6 col-xs-12 carousel">'+
 												'<h4>{{title}}</h4>'+
 												'<p>{{detail}}</p>'+
 											'</div>';
-
 // var templateResults = '<div class="col-md-6 col-sm-6 col-xs-12 carousel">{{precio}}</div>';
 var valueInputSearch = document.getElementById("search-location");
 var mirafloresCity = "Miraflores, Perú";
@@ -208,6 +198,7 @@ var sanIsidroCity = "San Isidro, Perú";
 
 $("#search-location").change(function(){
 	$.getJSON("http://localhost:3028/airbnb.json", function(response){
+		// alert(response.results1[0.filtros]);
 		var complete = "";
 		if (valueInputSearch.value == mirafloresCity){
 			$.each(response.results1, function(i, homes){
@@ -221,19 +212,6 @@ $("#search-location").change(function(){
 			var child = $("#eachresult").children()
 			child.remove();
 			$("#eachresult").append(complete);
-
-			$.each(response.results1, function(i, filtros){
-				var checkboxFilter = $('.checkbox input[type="checkbox"]');
-				for (var i = 0; i < checkboxFilter.length; i++){
-	        var ch = checkboxFilter[i].checked;
-					if(ch == true){
-						if($(checkboxFilter[i]).parent().text() == filtros.filtros){
-							alert("hola mundo");
-						}
-					}
-				}
-			});
-
 		}else if (valueInputSearch.value == sanIsidroCity){
 			$.each(response.results2, function(i, homes){
 				complete += templateResults
@@ -248,5 +226,69 @@ $("#search-location").change(function(){
 			$("#eachresult").append(complete);
 		}
 	});
-})
+});
+
+$(function () {
+		$("#datepicker").datepicker({
+		  dateFormat: "dd-mm-yy",
+		  firstDay: 1,
+		  dayNamesMin: ["Do", "Lu", "Ma", "Mi", "Ju", "Vi", "Sa"],
+		  dayNamesShort: ["Dom", "Lun", "Mar", "Mie", "Jue", "Vie", "Sab"],
+		  monthNames: 
+		      ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio",
+		      "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"],
+		  monthNamesShort: 
+		      ["Ene", "Feb", "Mar", "Abr", "May", "Jun",
+		      "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"]
+		});
+		$("#datepicker2").datepicker({
+		  dateFormat: "dd-mm-yy",
+		  firstDay: 1,
+		  dayNamesMin: ["Do", "Lu", "Ma", "Mi", "Ju", "Vi", "Sa"],
+		  dayNamesShort: ["Dom", "Lun", "Mar", "Mie", "Jue", "Vie", "Sab"],
+		  monthNames: 
+		      ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio",
+		      "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"],
+		  monthNamesShort: 
+		      ["Ene", "Feb", "Mar", "Abr", "May", "Jun",
+		      "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"]
+		});
+		$("#datepicker3").datepicker({
+		  dateFormat: "dd-mm-yy",
+		  firstDay: 1,
+		  dayNamesMin: ["Do", "Lu", "Ma", "Mi", "Ju", "Vi", "Sa"],
+		  dayNamesShort: ["Dom", "Lun", "Mar", "Mie", "Jue", "Vie", "Sab"],
+		  monthNames: 
+		      ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio",
+		      "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"],
+		  monthNamesShort: 
+		      ["Ene", "Feb", "Mar", "Abr", "May", "Jun",
+		      "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"]
+		});
+		$("#datepicker4").datepicker({
+		  dateFormat: "dd-mm-yy",
+		  firstDay: 1,
+		  dayNamesMin: ["Do", "Lu", "Ma", "Mi", "Ju", "Vi", "Sa"],
+		  dayNamesShort: ["Dom", "Lun", "Mar", "Mie", "Jue", "Vie", "Sab"],
+		  monthNames: 
+		      ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio",
+		      "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"],
+		  monthNamesShort: 
+		      ["Ene", "Feb", "Mar", "Abr", "May", "Jun",
+		      "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"]
+		});
+});
+$( function() {
+  $( "#slider-range" ).slider({
+    range: true,
+    min: 0,
+    max: 500,
+    values: [ 75, 300 ],
+    slide: function( event, ui ) {
+      $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+    }
+  });
+  $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
+    " - $" + $( "#slider-range" ).slider( "values", 1 ) );
+});
 

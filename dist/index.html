@@ -117,24 +117,24 @@
 			</div>
 		</div>
 	</section>
-
 	<section class="search container">
 		<div class="bar">
 			<div class="location">
 				<span>Dónde</span>
 				<input type="text" id="input-location" name="location" placeholder="Destino, ciudad, dirección">
+				<!-- <input type="text" name="location" id="search-location-home" placeholder="Destino, ciudad, dirección"> -->
 			</div>
 			<div class="date">
 				<span>Cúando</span>
 				<div>
 					<div class="startDate">
-						<input type="text" name="startDate" class="campofecha" size="12" placeholder="Llegada" id="input-start-date">
+						<input id="datepicker" type="text" name="startDate" class="campofecha" size="12" placeholder="Llegada">
 					</div>
 					<div class="arrow">
 						<i class="glyphicon glyphicon-arrow-right"></i>
 					</div>
 					<div class="endDate">
-						<input type="text" name="endDate" placeholder="Salida" id="input-date">
+						<input id="datepicker2" type="text" name="endDate" placeholder="Salida">
 					</div>
 					<div class="clean">X</div>
 				</div>
@@ -186,10 +186,10 @@
 							</div>
 							<div class="row">
 								<div class="col-xs-6">
-									<input type="text" name="startDate" placeholder="Llegada">
+									<input type="text" name="startDate" placeholder="Llegada" id="datepicker3">
 								</div>
 								<div class="col-xs-6">
-									<input type="text" name="endDate" placeholder="Salida">
+									<input type="text" name="endDate" placeholder="Salida" id="datepicker4">
 								</div>
 							</div>
 						</div>

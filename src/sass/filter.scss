@@ -1,18 +1,15 @@
 .filters-hidden{
-	overflow: scroll;
+		overflow: scroll;
     height: 41em;
     overflow-x: hidden;
 	.container-filter{
 		font-size: 14px;
-
 		.filters-section{
 			padding: 15px 0;
 			border-bottom: 1px solid #dce0e0;
-
 			.subtitle{
 				padding-top:9px;
 				padding-bottom:8px;
-
 				label{
 					font-size: 13px;
 					font-weight: bold;
@@ -25,6 +22,7 @@
 				border-radius:2px;
 				border:1px solid #aaa;
 				background-color:white;
+				margin-bottom: 15px;
 			}
 			input:focus{
 				outline: none;
@@ -33,26 +31,23 @@
 			select{
 				padding: 9px;
 			}
-
 			.div-gray{
 				background-color: #edefed;
 				border: 1px solid #dce0e0;
 				padding-top:9px;
 				padding-bottom:8px;
+				margin-bottom: 15px;
 				padding-left:7px;
-
 				div{
 					display: inline-block;
-
 					input{
 						margin:0 5px;
 						width: 1.25em;
 						height: 1.25em;
 						color: #008489;
 						border: 1px solid #aaa;
-						border-radius: 2px;
-						background-color: #fff;
-
+				    border-radius: 2px;
+				    background-color: #fff;
 					}
 				}
 				.publicity{
@@ -61,8 +56,7 @@
 			}
 		}
 	}
-}	
-
+}
 .sizeMap{
 	width: 100%;
 	height: 89vh;
