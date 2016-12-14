@@ -1,6 +1,11 @@
 @import "_variables";
 @import "_mixins";
-
+.ocultar{
+	display: none;
+}
+#cont-map{
+	padding-right:0; 
+}
 .container-advancedFilter{
 	.boton-advancedFilter{
 		padding: 30px 0;
@@ -13,6 +18,7 @@
 		}
 	}
 	.option-advancedFilter{
+		display: none;
 		select{
 			width: 100%;
 	    padding: 10px;

@@ -3,6 +3,11 @@
 	margin-bottom: 30px;
 	.carousel{
 		position: relative;
+		.img-json{
+			margin-left: 1em;
+			max-width: 100%;
+    		height: 17em;
+		}
 		.hearth{
 			color: #fff;
 			opacity: 0.8;
@@ -44,6 +49,7 @@
 			border: 2px solid white;
 			img{
 				width: 100%;
+				height: 100%;
 				border-radius: 50%;
 			}
 		}

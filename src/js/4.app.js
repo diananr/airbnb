@@ -1,10 +1,13 @@
-var slideIndex = 0;
+
 
 var loadPag = function(){
 	carouselExperiences();
-	carouselSlider()
+	carouselSlider();
 	showMap();
+	filterView();
+	// ajaxAirbnb();
 }
+
 
 $(document).ready(loadPag);
 
@@ -58,12 +61,11 @@ var carouselExperiences = function(){
 	prev.html("<span class='glyphicon glyphicon-menu-left'></span>");
 	var next = $(".owl-next");
 	next.html("<span class='glyphicon glyphicon-menu-right'></span>");
-
-
 }
 
+var slideIndex = 0;
+	var i = 0;
 var carouselSlider = function(){
-	var i;
 	var x = document.querySelectorAll(".slider-carrusel");
 	for (i = 0; i < x.length; i++) {
 	  x[i].style.display = "none";
@@ -71,8 +73,29 @@ var carouselSlider = function(){
 	slideIndex++;
 	if (slideIndex > x.length) {slideIndex = 1}
 	  $(x[slideIndex-1]).fadeIn(20);
-	setTimeout(carouselSlider, 10000);
 }
+
+var set = setInterval(carouselSlider, 10000);
+$('#next').click(function() {
+  clearInterval(carouselSlider);
+  i += 1;
+  var d = $(".slider-carrusel");
+  var itemAmt = d.length;
+  if (i < 0) {
+    i = itemAmt + 1;
+  }
+  carouselSlider();
+});
+
+$('#preview').click(function() {
+  // clearInterval(carouselSlider);
+  var d = $(".slider-carrusel");
+  var itemAmt = d.length;
+  if (i > 1) {
+    i = itemAmt - 1;
+  }
+  carouselSlider();
+});
 
 var showMap = function(){
 	$("#map").addClass("sizeMap");
@@ -94,12 +117,12 @@ var showMap = function(){
 	var autocomplete = new google.maps.places.Autocomplete(input);
 	  autocomplete.bindTo('bounds', map);
 
-	  var marker = new google.maps.Marker({
+	 var marker = new google.maps.Marker({
 		map: map,
 		anchorPoint: new google.maps.Point(0, -29)
 	});
 
-	  autocomplete.addListener('place_changed', function() {
+	 autocomplete.addListener('place_changed', function() {
 		marker.setVisible(false);
 		var place = autocomplete.getPlace();
 		if (!place.geometry) {
@@ -125,7 +148,6 @@ var showMap = function(){
 		marker.setVisible(true);
 	});
 }
-
 //Focus 
 
 $("#input-location").keydown(function(evento) {
@@ -150,7 +172,81 @@ $("#btn-search").on("click",function(){
   window.location="filter.html";
 });
 	
-		
+
+var filterView = function(){
+	$("#buttonFilter").click(function(){
+    $(".option-advancedFilter").fadeToggle();
+    $(".container-results").toggleClass("ocultar");
+	});
+}
 
 
+
+var templateResults = '<div class="col-md-6 col-sm-6 col-xs-12 carousel">'+
+												'<div id="carousel-result-1" class="owl-carousel owl-theme">'+
+													'<div class="item"><img src="{{img1}}" alt="Room" class="img-json"></div>'+
+													// '<div class="item"><img src="{{img2}}" alt="Room"></div>'+
+													// '<div class="item"><img src="{{img3}}" alt="Room"></div>'+
+												'</div>'+
+												'<span class="hearth glyphicon glyphicon-heart-empty"></span>'+
+												'<span class="hearth-2 glyphicon glyphicon-heart"></span>'+
+												'<div class="cost">' + 
+													'<strong>{{cost}}</strong>' +
+													'<span class="ray glyphicon glyphicon-flash"></span>'+ 
+												'</div>'+
+												'<div class="owner">' + 
+												  '<img src="{{imgp}}" alt="Owner" class="photo-owner">'+
+												'</div>'+
+												'<h4>{{title}}</h4>'+
+												'<p>{{detail}}</p>'+
+											'</div>';
+
+// var templateResults = '<div class="col-md-6 col-sm-6 col-xs-12 carousel">{{precio}}</div>';
+var valueInputSearch = document.getElementById("search-location");
+var mirafloresCity = "Miraflores, Perú";
+var sanIsidroCity = "San Isidro, Perú";
+
+$("#search-location").change(function(){
+	$.getJSON("http://localhost:3028/airbnb.json", function(response){
+		var complete = "";
+		if (valueInputSearch.value == mirafloresCity){
+			$.each(response.results1, function(i, homes){
+				complete += templateResults
+												.replace("{{img1}}", homes.img1)
+												.replace("{{cost}}", homes.price)
+												.replace("{{imgp}}", homes.owner)
+												.replace("{{title}}", homes.title)
+												.replace("{{detail}}", homes.datails);
+			});
+			var child = $("#eachresult").children()
+			child.remove();
+			$("#eachresult").append(complete);
+
+			$.each(response.results1, function(i, filtros){
+				var checkboxFilter = $('.checkbox input[type="checkbox"]');
+				for (var i = 0; i < checkboxFilter.length; i++){
+	        var ch = checkboxFilter[i].checked;
+					if(ch == true){
+						if($(checkboxFilter[i]).parent().text() == filtros.filtros){
+							alert("hola mundo");
+						}
+					}
+				}
+			});
+
+		}else if (valueInputSearch.value == sanIsidroCity){
+			$.each(response.results2, function(i, homes){
+				complete += templateResults
+												.replace("{{img1}}", homes.img1)
+												.replace("{{cost}}", homes.price)
+												.replace("{{imgp}}", homes.owner)
+												.replace("{{title}}", homes.title)
+												.replace("{{detail}}", homes.datails);
+			});
+			var child = $("#eachresult").children()
+			child.remove();
+			$("#eachresult").append(complete);
+		}
+	});
+})
 

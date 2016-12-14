@@ -1,0 +1,45 @@
+@import "_variables";
+
+.slider{
+	.menu{
+		background-color: transparent;
+		position: absolute;
+		width:100%;
+		margin-top: 1%;
+		a{
+			color: black;
+			padding-left:9%;
+		}
+	}
+	.menu2{
+		background-color: transparent;
+		position: absolute;
+		width:100%;
+		margin-top: 1%;
+		a{
+			color: white;
+			padding-left:9%;
+		}
+	}
+}
+
+@media only screen and (max-width:320px){
+	body{
+		header{
+			.menu{
+				.menu-links{
+					display: none;
+				}
+			}
+		}
+		.bar-move{
+			.bar-original{
+				background-color:white;
+				border-bottom: $border-botton;
+				.bar-links{
+					color: black;
+				}
+			}
+		}
+	}
+}

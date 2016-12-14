@@ -48,7 +48,7 @@
 		<section>
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-lg-7">
+					<div class="col-lg-7 filters-hidden">
 						<div class="container-filter">
 							<div class="filters-section">
 								<div class="row">
@@ -60,10 +60,10 @@
 									<div class="col-lg-9">
 										<div class="row">
 											<div class="col-lg-4">
-												<input type="text" name="checkin">
+												<input type="text" name="checkin" placeholder="Llegada">
 											</div>
 											<div class="col-lg-4">
-												<input type="text" name="checkout">
+												<input type="text" name="checkout" placeholder="Salida">
 											</div>
 											<div class="col-lg-4">
 												<div class="guests-select">
@@ -90,7 +90,8 @@
 											<div class="col-lg-4">
 												<div class="div-gray">
 													<div>
-														<span>Casa entera</span>
+														<i class="fa fa-home" aria-hidden="true"></i>
+														<span>Casa entera</span> 
 													</div>
 													<div>
 														<input type="checkbox">
@@ -153,7 +154,7 @@
 							<div class="boton-advancedFilter">
 								<div class="row">
 									<div class="col-lg-5">
-										<button>Filtros</button>
+										<button id="buttonFilter"><strong>Filtros</strong></button>
 									</div>
 									<div class="text-right col-lg-7"><strong>Más de 300 alquileres</strong></div>
 								</div>
@@ -377,62 +378,7 @@
 							</div>
 						</div>
 						<div class="container-results">
-							<div class="row">
-								<div class="col-md-6 col-sm-6 col-xs-12 carousel">
-									<div id="carousel-result-1" class="owl-carousel owl-theme">
-										<div class="item"><img src="img/resultado_1.1.jpg" alt="Room"></div>
-										<div class="item"><img src="img/resultado_1.2.jpg" alt="Room"></div>
-										<div class="item"><img src="img/resultado_1.3.jpg" alt="Room"></div>
-									</div>
-									<span class="hearth glyphicon glyphicon-heart-empty"></span>
-									<span class="hearth-2 glyphicon glyphicon-heart"></span>
-									<div class="cost"><strong>s/. 137</strong> <span class="ray glyphicon glyphicon-flash"></span></div>
-									<div class="owner"><img src="img/owner_1.jpg" alt="Owner"></div>
-									<h4>Mini-Apart 3 Blocks from the Plaza</h4>
-									<p>Casa/apto. entero · 2 huéspedes</p>
-								</div>
-								<div class="col-md-6 col-sm-6 col-xs-12 carousel">
-									<div id="carousel-result-2" class="owl-carousel owl-theme">
-										<div class="item"><img src="img/resultado_2.1.jpg" alt="Room"></div>
-										<div class="item"><img src="img/resultado_2.2.jpg" alt="Room"></div>
-										<div class="item"><img src="img/resultado_2.3.jpg" alt="Room"></div>
-									</div>
-									<span class="hearth glyphicon glyphicon-heart-empty"></span>
-									<span class="hearth-2 glyphicon glyphicon-heart"></span>
-									<div class="cost"><strong>s/. 33</strong> <span class="ray glyphicon glyphicon-flash"></div>
-									<div class="owner"><img src="img/owner_2.jpg" alt="Owner"></div>
-									<h4>Moderna Habitación a 10-15 min del Centro de Cusco</h4>
-									<p>Cusco, Cuzco, Perú</p>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-6 col-sm-6 col-xs-12 carousel">
-									<div id="carousel-result-3" class="owl-carousel owl-theme">
-										<div class="item"><img src="img/resultado_3.1.jpg" alt="Room"></div>
-										<div class="item"><img src="img/resultado_3.2.jpg" alt="Room"></div>
-										<div class="item"><img src="img/resultado_3.3.jpg" alt="Room"></div>
-									</div>
-									<span class="hearth glyphicon glyphicon-heart-empty"></span>
-									<span class="hearth-2 glyphicon glyphicon-heart"></span>
-									<div class="cost"><strong>s/. 85</strong> <span class="ray glyphicon glyphicon-flash"></span></div>
-									<div class="owner"><img src="img/owner_3.jpg" alt="Owner"></div>
-									<h4>HABITACION PARA 1 + DESAYUNO + WIFI</h4>
-									<p>Cusco, Cuzco, Perú</p>
-								</div>
-								<div class="col-md-6 col-sm-6 col-xs-12 carousel">
-									<div id="carousel-result-4" class="owl-carousel owl-theme">
-										<div class="item"><img src="img/resultado_4.1.jpg" alt="Room"></div>
-										<div class="item"><img src="img/resultado_4.2.jpg" alt="Room"></div>
-										<div class="item"><img src="img/resultado_4.3.jpg" alt="Room"></div>
-									</div>
-									<span class="hearth glyphicon glyphicon-heart-empty"></span>
-									<span class="hearth-2 glyphicon glyphicon-heart"></span>
-									<div class="cost"><strong>s/. 266</strong> <span class="ray glyphicon glyphicon-flash"></div>
-									<div class="owner"><img src="img/owner_4.jpg" alt="Owner"></div>
-									<h4>Vistas, en el centro, terraza, wifi y tranquilidad</h4>
-									<p>Cusco, Cuzco, Perú</p>
-								</div>
-							</div>
+							<div id="eachresult"></div>
 						</div>
 					</div>
 					<div class="submit">
@@ -443,6 +389,8 @@
 					</div>
 					<div class="col-lg-5">
 						<div id="map" class="map"></div>
+					<div id="cont-map" class="col-lg-5 col-md-5">
+						<div id="map"></div>
 					</div>
 				</div>
 			</div>

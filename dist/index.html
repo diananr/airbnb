@@ -2,15 +2,20 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="css/style.min.css">
-	<link rel="shortcut icon" type="image/png" href="img/logo.png"/>
+	<link rel="stylesheet" href="css/style.min.css">
 	<title>Te espera un mundo de viajes inolvidables</title>
 </head>
 <body>
-	<header></header>
 	<section>
 		<div class="slider">
+			<div class="btn-slider-preview">
+				<button class="btn-default btn next-preview" id="preview">
+					<span class="glyphicon glyphicon-menu-left"></span>
+				</button>
+			</div>
 			<div class="slider-1 slider-carrusel">
 				<div class="container">
 					<div class="row">
@@ -33,7 +38,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="slider-2 slider-carrusel" style="display:none;">
+			<div class="slider-2 slider-carrusel">
 				<div class="img">
 					<div class="container">
 						<div class="row">
@@ -57,7 +62,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="slider-3 slider-carrusel" style="display:none;">
+			<div class="slider-3 slider-carrusel">
 				<div class="img">
 					<div class="container">
 						<div class="row">
@@ -81,7 +86,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="slider-4 slider-carrusel" style="display:none;">
+			<div class="slider-4 slider-carrusel">
 				<div class="img">
 					<div class="container">
 						<div class="row">
@@ -90,7 +95,7 @@
 									<h2>En directo <br>desde <br>Los Ángeles</h2>
 									<h6>Acompaña a Brian Chesky, nuestro <br> director ejecutivo, en la presentación de <br> un nuevo mundo de viajes inolvidables</h6>
 									<div class="link-desktop">
-										<button type="button" class="btn btn-default">
+										<button type="button" class="btn-default">
 											<a href="#">Ver la presentación</a>
 										</button>
 									</div>
@@ -105,8 +110,14 @@
 					</div>
 				</div>
 			</div>
+			<div class="btn-slider-next">
+				<button class="btn-default btn next-preview" id="next">
+					<span class="glyphicon glyphicon-menu-right"></span>
+				</button>
+			</div>
 		</div>
 	</section>
+
 	<section class="search container">
 		<div class="bar">
 			<div class="location">
