@@ -157,9 +157,6 @@ var filterView = function(){
 }
 
 
-//ajax airbnb
-
-
 
 var templateResults = '<div class="col-md-6 col-sm-6 col-xs-12 carousel">'+
 												'<div id="carousel-result-1" class="owl-carousel owl-theme">'+
