@@ -116,31 +116,56 @@ var showMap = function(){
 			anchorPoint: new google.maps.Point(0, -29)
 		});
 
-	  autocomplete.addListener('place_changed', function() {
-			marker.setVisible(false);
-			var place = autocomplete.getPlace();
-			if (!place.geometry) {
-			  window.alert("Autocomplete's returned place contains no geometry");
-			  return;
-			}
-			if (place.geometry.viewport) {
-			  map.fitBounds(place.geometry.viewport);
-			} else {
-			  map.setCenter(place.geometry.location);
-			  map.setZoom(17);  // Why 17? Because it looks good.
-			}
-			marker.setIcon(/** @type {google.maps.Icon} */({
-			  url: place.icon,
-			  size: new google.maps.Size(71, 71),
-			  origin: new google.maps.Point(0, 0),
-			  anchor: new google.maps.Point(17, 34),
-			  scaledSize: new google.maps.Size(35, 35)
-			}));
-			marker.setPosition(place.geometry.location);
-			marker.setVisible(true);
-		});
-	}
+	 autocomplete.addListener('place_changed', function() {
+		marker.setVisible(false);
+		var place = autocomplete.getPlace();
+		if (!place.geometry) {
+		  window.alert("Autocomplete's returned place contains no geometry");
+		  return;
+		}
 
+		// If the place has a geometry, then present it on a map.
+		if (place.geometry.viewport) {
+		  map.fitBounds(place.geometry.viewport);
+		} else {
+		  map.setCenter(place.geometry.location);
+		  map.setZoom(17);  // Why 17? Because it looks good.
+		}
+		marker.setIcon(/** @type {google.maps.Icon} */({
+		  url: place.icon,
+		  size: new google.maps.Size(71, 71),
+		  origin: new google.maps.Point(0, 0),
+		  anchor: new google.maps.Point(17, 34),
+		  scaledSize: new google.maps.Size(35, 35)
+		}));
+		marker.setPosition(place.geometry.location);
+		marker.setVisible(true);
+	});
+}
+//Focus 
+
+$("#input-location").keydown(function(evento) {
+  var ascii = evento.keyCode;
+  if (ascii==13) {
+    $('#input-location').keyup(function(){
+      var $inputStartDate=$(this).parent().next().children().eq(1).children().eq(0).children().eq(0);
+      $inputStartDate.focus(); 
+    });
+  }   
+});
+
+$("#datepicker").keydown(function(evento) {
+  var ascii = evento.keyCode;
+  if(ascii==13){
+    var $inputDate=$(this).parent().next().next().children();
+    $inputDate.focus();  
+  }
+});
+
+$("#btn-search").on("click",function(){
+  window.location="filter.html";
+});
+	
 var filterView = function(){
 	$("#buttonFilter").click(function(){
     $(".option-advancedFilter").fadeToggle();
@@ -266,3 +291,4 @@ $( function() {
   $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
     " - $" + $( "#slider-range" ).slider( "values", 1 ) );
 });
+
