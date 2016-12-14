@@ -5,7 +5,7 @@ var loadPag = function(){
 	carouselSlider();
 	showMap();
 	filterView();
-	/*ajaxAirbnb();*/
+	// ajaxAirbnb();
 }
 
 
@@ -88,7 +88,7 @@ $('#next').click(function() {
 });
 
 $('#preview').click(function() {
-  /*clearInterval(carouselSlider);*/
+  // clearInterval(carouselSlider);
   var d = $(".slider-carrusel");
   var itemAmt = d.length;
   if (i > 1) {
@@ -156,6 +156,8 @@ var filterView = function(){
 	});
 }
 
+
+
 var templateResults = '<div class="col-md-6 col-sm-6 col-xs-12 carousel">'+
 												'<div id="carousel-result-1" class="owl-carousel owl-theme">'+
 													'<div class="item"><img src="{{img1}}" alt="Room" class="img-json"></div>'+
@@ -177,8 +179,8 @@ var templateResults = '<div class="col-md-6 col-sm-6 col-xs-12 carousel">'+
 
 // var templateResults = '<div class="col-md-6 col-sm-6 col-xs-12 carousel">{{precio}}</div>';
 var valueInputSearch = document.getElementById("search-location");
-var mirafloresCity = "Miraflores, Peru";
-var sanIsidroCity = "San Isidro, Peru";
+var mirafloresCity = "Miraflores, Perú";
+var sanIsidroCity = "San Isidro, Perú";
 
 $("#search-location").change(function(){
 	$.getJSON("http://localhost:3028/airbnb.json", function(response){
