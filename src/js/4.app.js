@@ -157,23 +157,23 @@ var filterView = function(){
 }
 
 var templateResults = '<div class="col-md-6 col-sm-6 col-xs-12 carousel">'+
-												'<div id="carousel-result-1" class="owl-carousel owl-theme">'+
-													'<div class="item"><img src="{{img1}}" alt="Room" class="img-json"></div>'+
-													'<div class="item"><img src="{{img2}}" alt="Room"></div>'+
-													'<div class="item"><img src="{{img3}}" alt="Room"></div>'+
-												'</div>'+
-												'<span class="hearth glyphicon glyphicon-heart-empty"></span>'+
-												'<span class="hearth-2 glyphicon glyphicon-heart"></span>'+
-												'<div class="cost">' + 
-													'<strong>{{cost}}</strong>' +
-													'<span class="ray glyphicon glyphicon-flash"></span>'+ 
-												'</div>'+
-												'<div class="owner">' + 
-												  '<img src="{{imgp}}" alt="Owner" class="photo-owner">'+
-												'</div>'+
-												'<h4>{{title}}</h4>'+
-												'<p>{{detail}}</p>'+
-											'</div>';
+							'<div id="carousel-result-1" class="owl-carousel owl-theme">'+
+								'<div class="item"><img src="{{img1}}" alt="Room" class="img-json"></div>'+
+								'<div class="item"><img src="{{img2}}" alt="Room"></div>'+
+								'<div class="item"><img src="{{img3}}" alt="Room"></div>'+
+							'</div>'+
+							'<span class="hearth glyphicon glyphicon-heart-empty"></span>'+
+							'<span class="hearth-2 glyphicon glyphicon-heart"></span>'+
+							'<div class="cost">' + 
+								'<strong>{{cost}}</strong>' +
+								'<span class="ray glyphicon glyphicon-flash"></span>'+ 
+							'</div>'+
+							'<div class="owner">' + 
+							  '<img src="{{imgp}}" alt="Owner" class="photo-owner">'+
+							'</div>'+
+							'<h4>{{title}}</h4>'+
+							'<p>{{detail}}</p>'+
+						'</div>';
 
 var valueInputSearch = document.getElementById("search-location");
 var mirafloresCity = "Miraflores, Perú";
