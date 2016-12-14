@@ -1,8 +1,11 @@
 
+
 var loadPag = function(){
 	carouselExperiences();
 	carouselSlider();
 	showMap();
+	filterView();
+	// ajaxAirbnb();
 }
 
 
@@ -145,3 +148,70 @@ var showMap = function(){
 		marker.setVisible(true);
 	});
 }
+
+var filterView = function(){
+	$("#buttonFilter").click(function(){
+    $(".option-advancedFilter").fadeToggle();
+    $(".container-results").toggleClass("ocultar");
+	});
+}
+
+
+//ajax airbnb
+
+
+
+var templateResults = '<div class="col-md-6 col-sm-6 col-xs-12 carousel">'+
+												'<div id="carousel-result-1" class="owl-carousel owl-theme">'+
+													'<div class="item"><img src="{{img1}}" alt="Room" class="img-json"></div>'+
+													// '<div class="item"><img src="{{img2}}" alt="Room"></div>'+
+													// '<div class="item"><img src="{{img3}}" alt="Room"></div>'+
+												'</div>'+
+												'<span class="hearth glyphicon glyphicon-heart-empty"></span>'+
+												'<span class="hearth-2 glyphicon glyphicon-heart"></span>'+
+												'<div class="cost">' + 
+													'<strong>{{cost}}</strong>' +
+													'<span class="ray glyphicon glyphicon-flash"></span>'+ 
+												'</div>'+
+												'<div class="owner">' + 
+												  '<img src="{{imgp}}" alt="Owner" class="photo-owner">'+
+												'</div>'+
+												'<h4>{{title}}</h4>'+
+												'<p>{{detail}}</p>'+
+											'</div>';
+
+// var templateResults = '<div class="col-md-6 col-sm-6 col-xs-12 carousel">{{precio}}</div>';
+var valueInputSearch = document.getElementById("search-location");
+var mirafloresCity = "Miraflores, Perú";
+var sanIsidroCity = "San Isidro, Perú";
+
+$("#search-location").change(function(){
+	$.getJSON("http://localhost:3028/airbnb.json", function(response){
+		var completar = "";
+		if (valueInputSearch.value == mirafloresCity){
+			$.each(response.results1, function(i, homes){
+				completar += templateResults
+												.replace("{{img1}}", homes.img1)
+												.replace("{{cost}}", homes.price)
+												.replace("{{imgp}}", homes.owner)
+												.replace("{{title}}", homes.title)
+												.replace("{{detail}}", homes.datails);
+			});
+			var child = $("#eachresult").children()
+			child.remove();
+			$("#eachresult").append(completar);
+		}else if (valueInputSearch.value == sanIsidroCity){
+			$.each(response.results2, function(i, homes){
+				completar += templateResults
+												.replace("{{img1}}", homes.img1)
+												.replace("{{cost}}", homes.price)
+												.replace("{{imgp}}", homes.owner)
+												.replace("{{title}}", homes.title)
+												.replace("{{detail}}", homes.datails);
+			});
+			var child = $("#eachresult").children()
+			child.remove();
+			$("#eachresult").append(completar);
+		}
+	});
+})
