@@ -1,3 +1,5 @@
+
+
 var loadPag = function(){
 	carouselExperiences();
 	carouselSlider();
@@ -70,7 +72,6 @@ var carouselSlider = function(){
 	if (slideIndex > x.length) {slideIndex = 1}
 	  $(x[slideIndex-1]).fadeIn(20);
 }
-
 var set = setInterval(carouselSlider, 10000);
 	$('#next').click(function() {
   clearInterval(carouselSlider);
@@ -82,7 +83,6 @@ var set = setInterval(carouselSlider, 10000);
   }
   carouselSlider();
 });
-
 $('#preview').click(function() {
   // clearInterval(carouselSlider);
   var d = $(".slider-carrusel");
