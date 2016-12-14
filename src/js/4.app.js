@@ -1,5 +1,3 @@
-
-
 var loadPag = function(){
 	carouselExperiences();
 	carouselSlider();
@@ -7,7 +5,6 @@ var loadPag = function(){
 	filterView();
 	// searchHome();
 }
-
 
 $(document).ready(loadPag);
 
@@ -62,9 +59,8 @@ var carouselExperiences = function(){
 	var next = $(".owl-next");
 	next.html("<span class='glyphicon glyphicon-menu-right'></span>");
 }
-
 var slideIndex = 0;
-	var i = 0;
+var i = 0;
 var carouselSlider = function(){
 	var x = document.querySelectorAll(".slider-carrusel");
 	for (i = 0; i < x.length; i++) {
@@ -127,7 +123,6 @@ var showMap = function(){
 			  window.alert("Autocomplete's returned place contains no geometry");
 			  return;
 			}
-		// If the place has a geometry, then present it on a map.
 			if (place.geometry.viewport) {
 			  map.fitBounds(place.geometry.viewport);
 			} else {
@@ -257,7 +252,6 @@ $(function () {
 		      "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"]
 		});
 });
-
 $( function() {
   $( "#slider-range" ).slider({
     range: true,

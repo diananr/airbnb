@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
@@ -10,33 +10,39 @@
 	<body>
 		<header class="container-fluid header-filter">
 			<div class="row">
-				<div class="col-lg-1 icon-header">
+				<div class="col-xs-3 col-lg-1 icon-header">
 					<img src="img/logo-pink.png">
 				</div>
-				<div class="col-lg-6 search-header">
+				<div class="col-xs-9 col-lg-6 search-header">
+					<!-- div class="row">
+						<div class="col-lg-4"><i class="glyphicon glyphicon-search"></i></div>
+						<div class="col-lg-8"><input type="text" name="location" placeholder="Buscar" id="search-location"></div>
+					</div> -->
 					<button>
 						<i class="glyphicon glyphicon-search"></i>
-						<input type="text" name="location" placeholder="Buscar" id="search-location">
+						<span>
+							<input type="text" name="location" placeholder="Buscar" id="search-location">
+						</span>
 					</button>
 				</div>
 				<div class="col-lg-5">
 					<div class="row links">
-						<div class="col-lg-5">
+						<div class="hidden-xs col-lg-5">
 							<div>
 								<span>Conviértete en un anfitrión</span>
 							</div>
 						</div>
-						<div class="col-lg-2">
+						<div class="hidden-xs col-lg-2">
 							<div>
 								<span>Ayuda</span>
 							</div>
 						</div>
-						<div class="col-lg-2">
+						<div class="hidden-xs col-lg-2">
 							<div>
 								<span>Regístrate</span>
 							</div>
 						</div>
-						<div class="col-lg-3">
+						<div class="hidden-xs col-lg-3">
 							<div>
 								<span>Inicia Sesión</span>
 							</div>
@@ -48,7 +54,7 @@
 		<section>
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-lg-7 filters-hidden">
+					<div class="col-xs-12 col-lg-7 filters-hidden">
 						<div class="container-filter">
 							<div class="filters-section">
 								<div class="row">
@@ -396,7 +402,7 @@
 							<div id="eachresult"></div>				
 						</div>
 					</div>
-					<div id="cont-map" class="col-lg-5 col-md-5">
+					<div id="cont-map" class="col-xs-12 col-lg-5 col-md-5">
 						<div id="map"></div>
 					</div>
 				</div>
