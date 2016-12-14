@@ -3,11 +3,25 @@
 .ocultar{
 	display: none;
 }
+#icon-ray{
+	color: #FFB400;
+}
+div.subtitle{
+	span{
+		font-size: 13px;
+    font-weight: 700;
+    color: #484848;
+	}
+}
 #cont-map{
+	position: fixed;
+  right: 0;
 	padding-right:0; 
 }
 .container-advancedFilter{
 	.boton-advancedFilter{
+		position: sticky;
+		top: 0;
 		padding: 30px 0;
 		border-bottom: 1px solid $color-light-gray;
 		button{
@@ -23,6 +37,7 @@
 			width: 100%;
 	    padding: 10px;
 	    border-radius: 3px;
+	    margin-bottom: 15px;
 		}
 		.filters-section{
 			padding: 20px 0;
