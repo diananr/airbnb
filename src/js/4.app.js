@@ -172,7 +172,7 @@ var mirafloresCity = "Miraflores, Perú";
 var sanIsidroCity = "San Isidro, Perú";
 
 $("#search-location").change(function(){
-	$.getJSON("http://localhost:3028/airbnb.json", function(response){
+	$.getJSON("https://airbnb-kaioshin.herokuapp.com/airbnb.json", function(response){
 		// alert(response.results1[0.filtros]);
 		var complete = "";
 		if (valueInputSearch.value == mirafloresCity){
