@@ -152,12 +152,7 @@ var filterView = function(){
     $(".container-results").toggleClass("ocultar");
 	});
 }
-
-
 //ajax airbnb
-
-
-
 var templateResults = '<div class="col-md-6 col-sm-6 col-xs-12 carousel">'+
 												'<div id="carousel-result-1" class="owl-carousel owl-theme">'+
 													'<div class="item"><img src="{{img1}}" alt="Room" class="img-json"></div>'+
@@ -176,7 +171,6 @@ var templateResults = '<div class="col-md-6 col-sm-6 col-xs-12 carousel">'+
 												'<h4>{{title}}</h4>'+
 												'<p>{{detail}}</p>'+
 											'</div>';
-
 // var templateResults = '<div class="col-md-6 col-sm-6 col-xs-12 carousel">{{precio}}</div>';
 var valueInputSearch = document.getElementById("search-location");
 var mirafloresCity = "Miraflores, Perú";
