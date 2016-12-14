@@ -5,7 +5,7 @@ var loadPag = function(){
 	carouselSlider();
 	showMap();
 	filterView();
-	// ajaxAirbnb();
+	/*ajaxAirbnb();*/
 }
 
 
@@ -88,7 +88,7 @@ $('#next').click(function() {
 });
 
 $('#preview').click(function() {
-  // clearInterval(carouselSlider);
+  /*clearInterval(carouselSlider);*/
   var d = $(".slider-carrusel");
   var itemAmt = d.length;
   if (i > 1) {
@@ -111,7 +111,7 @@ var showMap = function(){
 	};
 	var map = new google.maps.Map(document.getElementById("map"), myOptions);
 
-	//*autocomplete*//
+	/*autocomplete*/
 	var input =  document.getElementById("search-location");
 
 	var autocomplete = new google.maps.places.Autocomplete(input);
@@ -156,13 +156,11 @@ var filterView = function(){
 	});
 }
 
-
-
 var templateResults = '<div class="col-md-6 col-sm-6 col-xs-12 carousel">'+
 												'<div id="carousel-result-1" class="owl-carousel owl-theme">'+
 													'<div class="item"><img src="{{img1}}" alt="Room" class="img-json"></div>'+
-													// '<div class="item"><img src="{{img2}}" alt="Room"></div>'+
-													// '<div class="item"><img src="{{img3}}" alt="Room"></div>'+
+													'<div class="item"><img src="{{img2}}" alt="Room"></div>'+
+													'<div class="item"><img src="{{img3}}" alt="Room"></div>'+
 												'</div>'+
 												'<span class="hearth glyphicon glyphicon-heart-empty"></span>'+
 												'<span class="hearth-2 glyphicon glyphicon-heart"></span>'+
@@ -177,7 +175,6 @@ var templateResults = '<div class="col-md-6 col-sm-6 col-xs-12 carousel">'+
 												'<p>{{detail}}</p>'+
 											'</div>';
 
-// var templateResults = '<div class="col-md-6 col-sm-6 col-xs-12 carousel">{{precio}}</div>';
 var valueInputSearch = document.getElementById("search-location");
 var mirafloresCity = "Miraflores, Perú";
 var sanIsidroCity = "San Isidro, Perú";
