@@ -1,3 +1,5 @@
+
+
 var loadPag = function(){
 	carouselExperiences();
 	carouselSlider();
@@ -144,6 +146,13 @@ var showMap = function(){
 		}));
 		marker.setPosition(place.geometry.location);
 		marker.setVisible(true);
+	});
+}
+
+var filterView = function(){
+	$("#buttonFilter").click(function(){
+    $(".option-advancedFilter").fadeToggle();
+    $(".container-results").toggleClass("ocultar");
 	});
 }
 
